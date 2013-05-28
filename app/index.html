@@ -25,7 +25,11 @@
     <!-- example inputs source.  This is all rendered with AngularJS -->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+    <div class="navbar navbar-static-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container"><a href="#" class="brand">Form Input Checker</a></div>
+      </div>
+    <div class="container" id="page-view" ng-view></div>
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
