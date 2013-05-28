@@ -6,7 +6,24 @@ angular.module('formInputHelperApp')
     $scope.inputType = $routeParams.inputType;
 
     inputService.getInputs().then(function(d) {
-        $scope.inputs = d.inputTypes;
+        var inputsList = d.inputTypes;
+        // iterate through input types based on $routeParam
+        var findInput = function(val) {
+            for (var i = inputsList.length - 1; i >= 0; i--) {
+                if (inputsList[i].type === val) {
+                    $scope.input = inputsList[i];
+                    break;
+                };
+            }
+        };
+        // assign $scope.input
+        findInput($scope.inputType);
+        return
     });
+
+    // // getting variable out of $scope for faster loop
+    // var inputsList = $scope.inputs;
+    // var inputType = $scope.inputType;
+
 
   });
