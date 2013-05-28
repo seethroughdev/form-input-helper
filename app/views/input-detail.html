@@ -1,9 +1,8 @@
-<div class="row">
-	<div class="element-container span9">
+<div id="layout" class="pure-g-r">
+	<aside class="pure-u" ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></aside>
+	<div class="pure-u element-container">
 		<h1>Input: {{input.type}}</h1>
 		<input type="{{input.type}}" placeholder="{{input.type}} field">
 		<pre><code>{{input|json}}</code></pre>	
 	</div>
-
-	<aside class="span3" ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></aside class="span3">
 </div>

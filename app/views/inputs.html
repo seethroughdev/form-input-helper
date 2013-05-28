@@ -1,7 +1,14 @@
-<ul>
-    <li class="" ng-repeat="input in inputs" class="type-link {{input.type}}-link">
-        <a ng-href="/#/inputs/{{input.type}}">{{input.type}}</a>
-    </li>
-</ul>
-
+<div class="pure-u" id="menu">
+  <div class="pure-menu pure-menu-open">
+    <a class="pure-menu-heading" href="/">Form Input</a>
+		<ul>
+	    <li class="" ng-repeat="input in inputs" class="type-link {{input.type}}-link">
+	        <a ng-href="/#/inputs/{{input.type}}">{{input.type}}</a>
+	    </li>
+	    <li class="menu-item-divided">
+        <a href="http://yui.github.io/skinbuilder/?mode=pure">Skin Builder</a>
+	    </li>
+		</ul>
+	</div>			
+</div>
 <!-- <pre><code>{{inputs|json}}</code></pre> -->
