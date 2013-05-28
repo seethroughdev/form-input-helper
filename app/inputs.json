@@ -1,0 +1,249 @@
+{
+  "inputTypes": [
+    {
+      "type": "text",
+      "desc": "Here",
+      "placeholder": true,
+      "pattern": true,
+      "value": true,
+      "autofocus": true,
+      "maxlength": true,
+      "name": true,
+      "size": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "email",
+      "desc": "Here",
+      "placeholder": true,
+      "pattern": true,
+      "value": true,
+      "autofocus": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "search",
+      "desc": "Here",
+      "placeholder": true,
+      "pattern": true,
+      "value": true,
+      "autofocus": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "url",
+      "desc": "Here",
+      "placeholder": true,
+      "pattern": true,
+      "value": true,
+      "autofocus": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "tel",
+      "desc": "Here",
+      "placeholder": true,
+      "pattern": true,
+      "value": true,
+      "autofocus": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "color",
+      "desc": "Here",
+      "value": true,
+      "autofocus": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "range",
+      "desc": "Here",
+      "min": true,
+      "max": true,
+      "step": true,
+      "list": true,
+      "value": true,
+      "autofocus": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "datetime",
+      "desc": "Here",
+      "min": true,
+      "max": true,
+      "step": true,
+      "value": true,
+      "autofocus": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url",
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ]
+    },
+    {
+      "type": "checkbox",
+      "desc": "Here",
+      "checked": true,
+      "disabled": true,
+      "autofocus": true,
+      "value": true,
+      "name": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "radio",
+      "desc": "Here",
+      "checked": true,
+      "disabled": true,
+      "autofocus": true,
+      "value": true,
+      "name": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "reset",
+      "desc": "Here",
+      "value": true,
+      "codepen": "url"
+    },
+    {
+      "type": "submit",
+      "desc": "Here",
+      "autofocus": true,
+      "value": true,
+      "name": true,
+      "codepen": "url"
+    },
+    {
+      "type": "file",
+      "desc": "Here",
+      "autofocus": true,
+      "accept": true,
+      "maxlength": true,
+      "value": true,
+      "name": true,
+      "size": true,
+      "multiple": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "image",
+      "desc": "Here",
+      "autofocus": true,
+      "border": true,
+      "align": true,
+      "value": true,
+      "name": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "password",
+      "desc": "Here",
+      "autofocus": true,
+      "value": true,
+      "name": true,
+      "size": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "hidden",
+      "desc": "Here",
+      "value": true,
+      "name": true,
+      "readonly": true,
+      "codepen": "url"
+    },
+    {
+      "type": "number",
+      "desc": "Here",
+      "placeholder": true,
+      "min": true,
+      "max": true,
+      "step": true,
+      "autofocus": true,
+      "value": true,
+      "name": true,
+      "html5": true,
+      "readonly": true,
+      "codepen": "url",
+      "javascript": [
+        "stepUp()",
+        "stepDown()",
+        "valueAsNumber()"
+      ]
+    }
+  ],
+  "formElements": [
+    {
+      "type": "select",
+      "desc": "Here",
+      "codepen": "url"
+    },
+    {
+      "type": "textarea",
+      "desc": "Here",
+      "codepen": "url"
+    },
+    {
+      "type": "datalist",
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
+    },
+    {
+      "type": "keygen",
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
+    },
+    {
+      "type": "output",
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
+    },
+    {
+      "type": "progress",
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
+    },
+    {
+      "type": "meter",
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
+    }
+  ]
+}
