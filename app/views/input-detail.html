@@ -1,7 +1,9 @@
-<div ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></div>
+<div class="element-container span9">
+	<h1>The {{input.type}} input type.</h1>
 
-<h1>The {{input.type}} input type.</h1>
+	<input type="{{input.type}}" placeholder="{{input.type}} field">
 
-<input type="{{input.type}}" placeholder="{{input.type}} field">
+	<pre><code>{{input|json}}</code></pre>	
+</div>
 
-<pre><code>{{input|json}}</code></pre>
+<aside class="span3" ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></aside class="span3">
