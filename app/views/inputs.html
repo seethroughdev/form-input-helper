@@ -1,9 +1,7 @@
-<div class="well">
-    <ul>
-        <li ng-repeat="input in inputs" class="type-link {{input.type}}-link">
-            <a ng-href="/#/inputs/{{input.type}}">{{input.type}}</a>
-        </li>
-    </ul>
-</div>
+<ul class="btn-group">
+    <li class="btn" ng-repeat="input in inputs" class="type-link {{input.type}}-link">
+        <a ng-href="/#/inputs/{{input.type}}">{{input.type}}</a>
+    </li>
+</ul>
 
-<pre><code>{{inputs|json}}</code></pre>
+<!-- <pre><code>{{inputs|json}}</code></pre> -->

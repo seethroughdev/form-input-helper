@@ -11,13 +11,13 @@ angular.module('formInputHelperApp')
         var findInput = function(val) {
             for (var i = inputsList.length - 1; i >= 0; i--) {
                 if (inputsList[i].type === val) {
-                    $scope.input = inputsList[i];
+                    return inputsList[i];
                     break;
                 };
             }
         };
         // assign $scope.input
-        findInput($scope.inputType);
+        $scope.input = findInput($scope.inputType);
         return
     });
 
