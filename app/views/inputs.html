@@ -1,6 +1,8 @@
 <div class="well">
     <ul>
-        <li ng-repeat="input in inputs">{{input.type}}</li>
+        <li ng-repeat="input in inputs" class="type-link {{input.type}}-link">
+            <a ng-href="/#/inputs/{{input.type}}">{{input.type}}</a>
+        </li>
     </ul>
 </div>
 
