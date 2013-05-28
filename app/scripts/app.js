@@ -11,6 +11,10 @@ angular.module('formInputHelperApp', [])
         templateUrl: 'views/inputs.html',
         controller: 'InputsCtrl'
       })
+      .when('/inputs/:inputType', {
+        templateUrl: 'views/input-detail.html',
+        controller: 'InputDetailCtrl'
+      })
       .otherwise({
         redirectTo: '/inputs'
       });
