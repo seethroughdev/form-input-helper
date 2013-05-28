@@ -7,7 +7,11 @@ angular.module('formInputHelperApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/inputs', {
+        templateUrl: 'views/inputs.html',
+        controller: 'InputsCtrl'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/inputs'
       });
   });
