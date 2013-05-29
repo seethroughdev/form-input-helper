@@ -1,6 +1,7 @@
 // @import "compass_twitter_bootstrap";
 @import "../components/bourbon/app/assets/stylesheets/_bourbon";
 
-* {
-	@include box-sizing(border-box);
-}
+@import "_layout";
+@import "_typography";
+@import "_modules";
+
