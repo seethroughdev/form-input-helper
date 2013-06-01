@@ -7,7 +7,7 @@ angular.module('formInputHelperApp')
     restrict: 'A',
     replace: true,
     scope: {
-      input: '@inputType'
+      input: '@inputObject'
     },
     link: function (scope, element, attrs) {
 
@@ -15,27 +15,41 @@ angular.module('formInputHelperApp')
 
       // Set a watch because the link function is running before $resource
       scope.$watch('input', function(input) {
+
+        var addAttr = function(key, value) {
+          element.attr(key, value);
+        };
+
         if (input) {
           var obj = angular.fromJson(input),
               attr = obj.attr,
               links = obj.links;
 
-          // Add appropriate attributes
-          if (attr.autofocus) {element.attr('autofocus', '');}
-          if (attr.checked) {element.attr('checked', '');}
-          if (attr.maxlength) {element.attr('maxlength', '10');}
-          if (attr.list) {element.attr('list', 'list-choices');}
-          if (attr.min) {element.attr('min', '2');}
-          if (attr.max) {element.attr('max', '10');}
-          if (attr.name) {element.attr('name', obj.type + 'Name');}
-          if (attr.pattern) {element.attr('pattern', '[a-zA-Z0-9]+');}
-          if (attr.placeholder) {element.attr('placeholder', obj.type + 'field');}
-          if (attr.size) {element.attr('size', '10');}
-          if (attr.step) {element.attr('step', '1');}
-          if (attr.value) {element.attr('value', obj.type + 'Value');}
-          if (attr.accept) {element.attr('accept', 'image/*');}
+          // clean up element
+          element.removeAttr('data-input-object');
+          element.removeAttr('data-input-helper');
 
+          // set field type
+          element.attr('type', obj.type);
+
+          // Add appropriate attributes
+          if (attr.autofocus) {addAttr('autofocus', 'autofocus');}
+          if (attr.checked) {addAttr('checked', '');}
+          if (attr.maxlength) {addAttr('maxlength', '20');}
+          if (attr.list) {addAttr('list', 'list-choices');}
+          if (attr.min) {addAttr('min', '2');}
+          if (attr.max) {addAttr('max', '20');}
+          if (attr.name) {addAttr('name', obj.type + 'Name');}
+          if (attr.pattern) {addAttr('pattern', '[a-zA-Z0-9]+');}
+          if (attr.placeholder) {addAttr('placeholder', obj.type + ' field');}
+          if (attr.size) {addAttr('size', '20');}
+          if (attr.step) {addAttr('step', '1');}
+          if (attr.value) {addAttr('value', '');}
+          if (attr.accept) {addAttr('accept', 'image/*');}
+
+          log(element[0].outerHTML);
         }
+
       });
     }
   };
