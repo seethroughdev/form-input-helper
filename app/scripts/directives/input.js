@@ -47,6 +47,14 @@ angular.module('formInputHelperApp')
           if (attr.value) {addAttr('value', '');}
           if (attr.accept) {addAttr('accept', 'image/*');}
 
+          if (obj.type === 'reset') {
+            addAttr('value', 'Reset Button')
+          }
+
+          if (obj.type === 'submit') {
+            addAttr('value', 'Submit')
+          }
+
           log(element[0].outerHTML);
         }
 
