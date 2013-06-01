@@ -48,12 +48,25 @@ angular.module('formInputHelperApp')
           if (attr.accept) {addAttr('accept', 'image/*');}
 
           if (obj.type === 'reset') {
-            addAttr('value', 'Reset Button')
+            addAttr('value', 'Reset Button');
           }
 
           if (obj.type === 'submit') {
-            addAttr('value', 'Submit')
+            addAttr('value', 'Submit');
           }
+
+          if (obj.type === 'radio' || obj.type === 'checkbox') {
+            element.wrap('<label>');
+            var labelContainer = element.parent();
+            labelContainer.append('This is a ' + obj.type + '.');
+
+            // var parent = element.parent();
+            // parent.after(parent.clone());
+            // parent.after(parent.clone());
+            // parent.append('This is a ' + obj.type + '.');
+          }
+
+          log(element);
 
           log(element[0].outerHTML);
         }
