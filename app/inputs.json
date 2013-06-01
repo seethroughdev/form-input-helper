@@ -3,100 +3,132 @@
     {
       "type": "text",
       "desc": "Here",
-      "placeholder": true,
-      "pattern": true,
-      "value": true,
-      "autofocus": true,
-      "maxlength": true,
-      "name": true,
-      "size": true,
-      "readonly": true,
-      "codepen": "url"
+      "links": {
+        "codepen": "url"
+      },
+      "attr": {
+        "pattern": true,
+        "autofocus": true,
+        "maxlength": true,
+        "name": true,
+        "readonly": true,
+        "size": true,
+        "value": true,
+        "placeholder": true
+      }
     },
     {
       "type": "email",
       "desc": "Here",
-      "placeholder": true,
-      "pattern": true,
-      "value": true,
-      "autofocus": true,
-      "name": true,
       "html5": true,
-      "readonly": true,
-      "codepen": "url"
+      "links": {
+        "codepen": "url"
+      },
+      "attr": {
+        "value": true,
+        "pattern": true,
+        "autofocus": true,
+        "readonly": true,
+        "name": true,
+        "placeholder": true
+      }
     },
     {
       "type": "search",
       "desc": "Here",
-      "placeholder": true,
-      "pattern": true,
-      "value": true,
-      "autofocus": true,
-      "name": true,
-      "html5": true,
-      "readonly": true,
-      "codepen": "url"
+      "links": {
+        "codepen": "url"
+      },
+      "attr": {
+        "pattern": true,
+        "value": true,
+        "name": true,
+        "readonly": true,
+        "autofocus": true,
+        "placeholder": true
+      },
+      "html5": true
     },
     {
       "type": "url",
       "desc": "Here",
-      "placeholder": true,
-      "pattern": true,
-      "value": true,
-      "autofocus": true,
-      "name": true,
       "html5": true,
-      "readonly": true,
-      "codepen": "url"
+      "attr": {
+        "placeholder": true,
+        "value": true,
+        "autofocus": true,
+        "name": true,
+        "readonly": true,
+        "pattern": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "tel",
       "desc": "Here",
-      "placeholder": true,
-      "pattern": true,
-      "value": true,
-      "autofocus": true,
-      "name": true,
       "html5": true,
-      "readonly": true,
-      "codepen": "url"
+      "links": {
+        "codepen": "url"
+      },
+      "attr": {
+        "placeholder": true,
+        "pattern": true,
+        "autofocus": true,
+        "name": true,
+        "readonly": true,
+        "value": true
+      }
     },
     {
       "type": "color",
       "desc": "Here",
-      "value": true,
-      "autofocus": true,
-      "name": true,
       "html5": true,
-      "readonly": true,
-      "codepen": "url"
+      "attr": {
+        "value": true,
+        "readonly": true,
+        "name": true,
+        "autofocus": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "range",
       "desc": "Here",
-      "min": true,
-      "max": true,
-      "step": true,
-      "list": true,
-      "value": true,
-      "autofocus": true,
-      "name": true,
       "html5": true,
-      "readonly": true,
-      "codepen": "url"
+      "links": {
+        "codepen": "url"
+      },
+      "attr": {
+        "min": true,
+        "max": true,
+        "step": true,
+        "list": true,
+        "value": true,
+        "autofocus": true,
+        "name": true,
+        "readonly": true
+      }
     },
     {
-      "type": "datetime",
+      "type": "date",
       "desc": "Here",
-      "min": true,
-      "max": true,
-      "step": true,
-      "value": true,
-      "autofocus": true,
-      "name": true,
       "html5": true,
-      "readonly": true,
-      "codepen": "url",
+      "attr": {
+        "min": true,
+        "max": true,
+        "step": true,
+        "value": true,
+        "autofocus": true,
+        "name": true,
+        "readonly": true
+      },
+      "links": {
+        "codepen": "url"
+      },
       "formats": [
         "date",
         "datetime",
@@ -109,94 +141,129 @@
     {
       "type": "checkbox",
       "desc": "Here",
-      "checked": true,
-      "disabled": true,
-      "autofocus": true,
-      "value": true,
-      "name": true,
-      "readonly": true,
-      "codepen": "url"
+      "attr": {
+        "checked": true,
+        "disabled": true,
+        "autofocus": true,
+        "name": true,
+        "value": true,
+        "readonly": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "radio",
       "desc": "Here",
-      "checked": true,
-      "disabled": true,
-      "autofocus": true,
-      "value": true,
-      "name": true,
-      "readonly": true,
-      "codepen": "url"
+      "attr": {
+        "checked": true,
+        "disabled": true,
+        "value": true,
+        "name": true,
+        "readonly": true,
+        "autofocus": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "reset",
       "desc": "Here",
-      "value": true,
-      "codepen": "url"
+      "links": {
+        "codepen": "url"
+      },
+      "attr": {
+        "value": true
+      }
     },
     {
       "type": "submit",
       "desc": "Here",
-      "autofocus": true,
-      "value": true,
-      "name": true,
-      "codepen": "url"
+      "attr": {
+        "value": true,
+        "name": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "file",
       "desc": "Here",
-      "autofocus": true,
-      "accept": true,
-      "maxlength": true,
-      "value": true,
-      "name": true,
-      "size": true,
-      "multiple": true,
-      "readonly": true,
-      "codepen": "url"
+      "attr": {
+        "accept": true,
+        "value": true,
+        "name": true,
+        "size": true,
+        "readonly": true,
+        "multiple": true,
+        "maxlength": true,
+        "autofocus": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "image",
       "desc": "Here",
-      "autofocus": true,
-      "border": true,
-      "align": true,
-      "value": true,
-      "name": true,
-      "readonly": true,
-      "codepen": "url"
+      "links": {
+        "codepen": "url"
+      },
+      "attr": {
+        "autofocus": true,
+        "border": true,
+        "align": true,
+        "value": true,
+        "readonly": true,
+        "name": true
+      }
     },
     {
       "type": "password",
       "desc": "Here",
-      "autofocus": true,
-      "value": true,
-      "name": true,
-      "size": true,
-      "readonly": true,
-      "codepen": "url"
+      "attr": {
+        "autofocus": true,
+        "value": true,
+        "name": true,
+        "size": true,
+        "readonly": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "hidden",
       "desc": "Here",
-      "value": true,
-      "name": true,
-      "readonly": true,
-      "codepen": "url"
+      "attr": {
+        "name": true,
+        "readonly": true,
+        "value": true
+      },
+      "links": {
+        "codepen": "url"
+      }
     },
     {
       "type": "number",
       "desc": "Here",
-      "placeholder": true,
-      "min": true,
-      "max": true,
-      "step": true,
-      "autofocus": true,
-      "value": true,
-      "name": true,
       "html5": true,
-      "readonly": true,
-      "codepen": "url",
+      "attr": {
+        "placeholder": true,
+        "min": true,
+        "max": true,
+        "step": true,
+        "value": true,
+        "name": true,
+        "autofocus": true,
+        "readonly": true
+      },
+      "links": {
+        "codepen": "url"
+      },
       "javascript": [
         "stepUp()",
         "stepDown()",
