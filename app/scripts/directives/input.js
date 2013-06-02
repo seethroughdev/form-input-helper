@@ -69,7 +69,7 @@ angular.module('formInputHelperApp')
             element.removeAttr('name');
           }
           if (attr.pattern) {
-            element.attr('pattern', '');
+            element.attr('pattern', '[a-zA-Z0-9]+');
           } else {
             element.removeAttr('pattern');
           }
@@ -89,7 +89,7 @@ angular.module('formInputHelperApp')
             element.removeAttr('step');
           }
           if (attr.value) {
-            element.attr('value', '');
+            element.attr('value', element.val() || '');
           }
           if (attr.accept) {
             element.attr('accept', 'image/*');

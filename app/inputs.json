@@ -27,7 +27,7 @@
       },
       "attr": {
         "value": true,
-        "pattern": true,
+        "pattern": false,
         "autofocus": true,
         "readonly": true,
         "name": true,
@@ -41,7 +41,7 @@
         "codepen": "url"
       },
       "attr": {
-        "pattern": true,
+        "pattern": false,
         "value": true,
         "name": true,
         "readonly": false,
@@ -60,7 +60,7 @@
         "autofocus": true,
         "name": true,
         "readonly": false,
-        "pattern": true
+        "pattern": false
       },
       "links": {
         "codepen": "url"
@@ -75,7 +75,7 @@
       },
       "attr": {
         "placeholder": true,
-        "pattern": true,
+        "pattern": false,
         "autofocus": true,
         "name": true,
         "readonly": false,
