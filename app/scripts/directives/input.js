@@ -7,23 +7,18 @@ angular.module('formInputHelperApp')
     restrict: 'A',
     replace: true,
     scope: {
-      input: '@inputObject'
+      inputObject: '@'
     },
     link: function (scope, element, attrs) {
 
       var log = $log.log; // quick log function
 
-      // Set a watch because the link function is running before $resource
-      scope.$watch('input', function(input) {
+      // Watch since resource is async
+      scope.$watch('inputObject', function(inputObject) {
 
-        var addAttr = function(key, value) {
-          element.attr(key, value);
-        };
-
-        if (input) {
-          var obj = angular.fromJson(input),
-              attr = obj.attr,
-              links = obj.links;
+        if (inputObject) {
+          var obj = angular.fromJson(inputObject),
+              attr = obj.attr;
 
           // clean up element
           element.removeAttr('data-input-object');
@@ -33,42 +28,36 @@ angular.module('formInputHelperApp')
           element.attr('type', obj.type);
 
           // Add appropriate attributes
-          if (attr.autofocus) {addAttr('autofocus', 'autofocus');}
-          if (attr.checked) {addAttr('checked', '');}
-          if (attr.maxlength) {addAttr('maxlength', '20');}
-          if (attr.list) {addAttr('list', 'list-choices');}
-          if (attr.min) {addAttr('min', '2');}
-          if (attr.max) {addAttr('max', '20');}
-          if (attr.name) {addAttr('name', obj.type + 'Name');}
-          if (attr.pattern) {addAttr('pattern', '[a-zA-Z0-9]+');}
-          if (attr.placeholder) {addAttr('placeholder', obj.type + ' field');}
-          if (attr.size) {addAttr('size', '20');}
-          if (attr.step) {addAttr('step', '1');}
-          if (attr.value) {addAttr('value', '');}
-          if (attr.accept) {addAttr('accept', 'image/*');}
+          if (attr.autofocus) {element.attr('autofocus', 'autofocus');}
+          if (attr.checked) {element.attr('checked', '');}
+          if (attr.maxlength) {element.attr('maxlength', '20');}
+          if (attr.list) {element.attr('list', 'list-choices');}
+          if (attr.min) {element.attr('min', '2');}
+          if (attr.max) {element.attr('max', '20');}
+          if (attr.name) {element.attr('name', obj.type + 'Name');}
+          if (attr.pattern) {element.attr('pattern', '');}
+          if (attr.placeholder) {element.attr('placeholder', obj.type + ' field');}
+          if (attr.size) {element.attr('size', '20');}
+          if (attr.step) {element.attr('step', '1');}
+          if (attr.value) {element.attr('value', '');}
+          if (attr.accept) {element.attr('accept', 'image/*');}
 
           if (obj.type === 'reset') {
-            addAttr('value', 'Reset Button');
+            element.attr('value', 'Reset Button');
           }
 
           if (obj.type === 'submit') {
-            addAttr('value', 'Submit');
+            element.attr('value', 'Submit');
           }
 
           if (obj.type === 'radio' || obj.type === 'checkbox') {
             element.wrap('<label>');
-            var labelContainer = element.parent();
-            labelContainer.append('This is a ' + obj.type + '.');
-
-            // var parent = element.parent();
-            // parent.after(parent.clone());
-            // parent.after(parent.clone());
-            // parent.append('This is a ' + obj.type + '.');
+            element.parent()
+              .append('This is a ' + obj.type + '.');
           }
 
-          log(element);
-
           log(element[0].outerHTML);
+
         }
 
       });
