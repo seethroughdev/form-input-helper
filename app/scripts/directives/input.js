@@ -7,7 +7,8 @@ angular.module('formInputHelperApp')
     restrict: 'A',
     replace: true,
     scope: {
-      inputObject: '@'
+      inputObject: '@',
+      bindingHtml: '=bindingHtml'
     },
     link: function(scope, element, attrs) {
 
@@ -23,6 +24,7 @@ angular.module('formInputHelperApp')
           // clean up element
           element.removeAttr('data-input-object');
           element.removeAttr('data-input-helper');
+          element.removeAttr('binding-html');
 
           // set field type
           element.attr('type', obj.type);
@@ -95,15 +97,12 @@ angular.module('formInputHelperApp')
           if (attr.accept) {
             element.attr('accept', 'image/*');
           }
-
           if (obj.type === 'reset') {
             element.attr('value', 'Reset Button');
           }
-
           if (obj.type === 'submit') {
             element.attr('value', 'Submit');
           }
-
           if ((element.parent().hasClass('label-container') === false) &&
             (obj.type === 'radio' || obj.type === 'checkbox')) {
             element.wrap('<label class="label-container">');
@@ -111,11 +110,12 @@ angular.module('formInputHelperApp')
               .append('This is a ' + obj.type + '.');
           }
 
-          log(element);
-          log(element[0].outerHTML);
+          // log(element);
 
+          // passing rendered html to codebox
+          scope.bindingHtml = element[0].outerHTML;
+          log(scope.bindingHtml);
         }
-
       });
     }
   };
