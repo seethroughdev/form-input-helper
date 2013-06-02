@@ -34,9 +34,10 @@ angular.module('formInputHelperApp')
             element.removeAttr('autofocus');
           }
           if (attr.checked) {
-            element.attr('checked', '');
+            element.attr('checked', 'checked');
           } else {
             element.removeAttr('checked');
+            element[0].checked = false;
           }
           if (attr.maxlength) {
             element.attr('maxlength', '20');
@@ -103,12 +104,14 @@ angular.module('formInputHelperApp')
             element.attr('value', 'Submit');
           }
 
-          if (obj.type === 'radio' || obj.type === 'checkbox') {
-            element.wrap('<label>');
+          if ((element.parent().hasClass('label-container') === false) &&
+            (obj.type === 'radio' || obj.type === 'checkbox')) {
+            element.wrap('<label class="label-container">');
             element.parent()
               .append('This is a ' + obj.type + '.');
           }
 
+          log(element);
           log(element[0].outerHTML);
 
         }

@@ -28,7 +28,7 @@
       "attr": {
         "value": true,
         "pattern": false,
-        "autofocus": true,
+        "autofocus": false,
         "readonly": true,
         "name": true,
         "placeholder": true
@@ -45,7 +45,7 @@
         "value": true,
         "name": true,
         "readonly": false,
-        "autofocus": true,
+        "autofocus": false,
         "placeholder": true
       },
       "html5": true
@@ -57,7 +57,7 @@
       "attr": {
         "placeholder": true,
         "value": true,
-        "autofocus": true,
+        "autofocus": false,
         "name": true,
         "readonly": false,
         "pattern": false
@@ -76,7 +76,7 @@
       "attr": {
         "placeholder": true,
         "pattern": false,
-        "autofocus": true,
+        "autofocus": false,
         "name": true,
         "readonly": false,
         "value": true
@@ -90,7 +90,7 @@
         "value": true,
         "readonly": false,
         "name": true,
-        "autofocus": true
+        "autofocus": false
       },
       "links": {
         "codepen": "url"
@@ -108,7 +108,7 @@
         "max": true,
         "step": true,
         "value": true,
-        "autofocus": true,
+        "autofocus": false,
         "name": true,
         "readonly": false
       }
@@ -122,7 +122,7 @@
         "max": true,
         "step": true,
         "value": true,
-        "autofocus": true,
+        "autofocus": false,
         "name": true,
         "readonly": false
       },
@@ -144,7 +144,7 @@
       "attr": {
         "checked": true,
         "disabled": true,
-        "autofocus": true,
+        "autofocus": false,
         "name": true,
         "value": true,
         "readonly": false
@@ -162,7 +162,7 @@
         "value": true,
         "name": true,
         "readonly": false,
-        "autofocus": true
+        "autofocus": false
       },
       "links": {
         "codepen": "url"
@@ -200,7 +200,7 @@
         "readonly": false,
         "multiple": true,
         "maxlength": true,
-        "autofocus": true
+        "autofocus": false
       },
       "links": {
         "codepen": "url"
@@ -213,7 +213,7 @@
         "codepen": "url"
       },
       "attr": {
-        "autofocus": true,
+        "autofocus": false,
         "border": true,
         "align": true,
         "value": true,
@@ -225,7 +225,7 @@
       "type": "password",
       "desc": "Here",
       "attr": {
-        "autofocus": true,
+        "autofocus": false,
         "value": true,
         "name": true,
         "size": true,
@@ -258,7 +258,7 @@
         "step": true,
         "value": true,
         "name": true,
-        "autofocus": true,
+        "autofocus": false,
         "readonly": false
       },
       "links": {
