@@ -20,7 +20,7 @@ angular.module('formInputHelperApp')
     // assign $scope.input
     $scope.input = findInput(inputType);
 
-    $scope.placeholder = $scope.input.attr.placeholder;
+    // $scope.placeholder = $scope.input.attr.placeholder;
 
     // $scope.input.attr.pattern = false;
 

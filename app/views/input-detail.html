@@ -5,18 +5,19 @@
 
         <!-- Do not copy this source directly, it is compiled by Angular -->
         <div ng-if="{{input.attr.list}}" data-datalist data-input-object="{{input}}"></div>
+
         <form id="display-form" class="pure-form">
             <input data-input-helper data-input-object="{{input}}">
-            <input ng-if="input.type == 'radio' || input.type == 'checkbox'" data-input-helper data-input-object="{{input}}">
-            <input ng-if="input.type == 'radio' || input.type == 'checkbox'" data-input-helper data-input-object="{{input}}">
+<!--             <input ng-if="input.type == 'radio' || input.type == 'checkbox'" data-input-helper data-input-object="{{input}}">
+            <input ng-if="input.type == 'radio' || input.type == 'checkbox'" data-input-helper data-input-object="{{input}}"> -->
             <input class="pure-button" type="submit" value="Submit">
         </form>
         <!-- Instead, use the box created on the page! -->
 
         <div class="form-checkbox">
             <form>
-                <label ng-repeat="(key, value) in input.attr">
-                    <input type="checkbox" ng-model="input.attr[key]" data-something="{{key}}">{{key}}
+                <label ng-repeat="(key, value) in input.attr track by $id($index)">
+                    <input type="checkbox" ng-model="input.attr[key]">{{key}}
                 </label>
             </form>
         </div>
