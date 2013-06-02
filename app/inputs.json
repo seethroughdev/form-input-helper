@@ -12,7 +12,7 @@
         "autofocus": true,
         "maxlength": true,
         "name": true,
-        "readonly": true,
+        "readonly": false,
         "size": true,
         "value": true,
         "placeholder": true
@@ -44,7 +44,7 @@
         "pattern": true,
         "value": true,
         "name": true,
-        "readonly": true,
+        "readonly": false,
         "autofocus": true,
         "placeholder": true
       },
@@ -59,7 +59,7 @@
         "value": true,
         "autofocus": true,
         "name": true,
-        "readonly": true,
+        "readonly": false,
         "pattern": true
       },
       "links": {
@@ -78,7 +78,7 @@
         "pattern": true,
         "autofocus": true,
         "name": true,
-        "readonly": true,
+        "readonly": false,
         "value": true
       }
     },
@@ -88,7 +88,7 @@
       "html5": true,
       "attr": {
         "value": true,
-        "readonly": true,
+        "readonly": false,
         "name": true,
         "autofocus": true
       },
@@ -110,7 +110,7 @@
         "value": true,
         "autofocus": true,
         "name": true,
-        "readonly": true
+        "readonly": false
       }
     },
     {
@@ -124,7 +124,7 @@
         "value": true,
         "autofocus": true,
         "name": true,
-        "readonly": true
+        "readonly": false
       },
       "links": {
         "codepen": "url"
@@ -147,7 +147,7 @@
         "autofocus": true,
         "name": true,
         "value": true,
-        "readonly": true
+        "readonly": false
       },
       "links": {
         "codepen": "url"
@@ -161,7 +161,7 @@
         "disabled": true,
         "value": true,
         "name": true,
-        "readonly": true,
+        "readonly": false,
         "autofocus": true
       },
       "links": {
@@ -197,7 +197,7 @@
         "value": true,
         "name": true,
         "size": true,
-        "readonly": true,
+        "readonly": false,
         "multiple": true,
         "maxlength": true,
         "autofocus": true
@@ -217,7 +217,7 @@
         "border": true,
         "align": true,
         "value": true,
-        "readonly": true,
+        "readonly": false,
         "name": true
       }
     },
@@ -229,7 +229,7 @@
         "value": true,
         "name": true,
         "size": true,
-        "readonly": true
+        "readonly": false
       },
       "links": {
         "codepen": "url"
@@ -240,7 +240,7 @@
       "desc": "Here",
       "attr": {
         "name": true,
-        "readonly": true,
+        "readonly": false,
         "value": true
       },
       "links": {
@@ -259,7 +259,7 @@
         "value": true,
         "name": true,
         "autofocus": true,
-        "readonly": true
+        "readonly": false
       },
       "links": {
         "codepen": "url"

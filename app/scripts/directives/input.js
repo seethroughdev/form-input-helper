@@ -58,6 +58,11 @@ angular.module('formInputHelperApp')
           } else {
             element.removeAttr('max');
           }
+          if (attr.readonly) {
+            element.attr('readonly', 'readonly');
+          } else {
+            element.removeAttr('readonly');
+          }
           if (attr.name) {
             element.attr('name', obj.type + 'Name');
           } else {
