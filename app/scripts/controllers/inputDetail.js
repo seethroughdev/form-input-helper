@@ -1,9 +1,11 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .controller('InputDetailCtrl', function($scope, inputService, $routeParams) {
+  .controller('InputDetailCtrl', function($scope, inputService, $routeParams, $log) {
 
-  $scope.inputType = $routeParams.inputType;
+  var log = $log.log;
+
+  var inputType = $scope.inputType = $routeParams.inputType;
 
   inputService.getInputs().then(function(d) {
     var inputsList = d.inputTypes;
@@ -16,7 +18,12 @@ angular.module('formInputHelperApp')
       }
     };
     // assign $scope.input
-    $scope.input = findInput($scope.inputType);
+    $scope.input = findInput(inputType);
+
+    $scope.placeholder = $scope.input.attr.placeholder;
+
+    // $scope.input.attr.pattern = false;
+
     return;
   });
 

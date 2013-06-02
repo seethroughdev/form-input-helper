@@ -10,7 +10,18 @@
                 <input data-input-helper data-input-object="{{input}}">
             </form>
             <!-- Instead, use the box created on the page! -->
+
+            <div class="form-checkbox">
+                <form>
+                    <label ng-repeat="(key, value) in input.attr">
+                        <input type="checkbox" ng-model="input.attr[key]" data-something="{{key}}">{{key}}
+                    </label>
+                </form>
+            </div>
+
         </div>
+
+
 
 		<pre><code>{{input|json}}</code></pre>
     </div>

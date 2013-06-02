@@ -9,7 +9,7 @@ angular.module('formInputHelperApp')
     scope: {
       inputObject: '@'
     },
-    link: function (scope, element, attrs) {
+    link: function(scope, element, attrs) {
 
       var log = $log.log; // quick log function
 
@@ -18,7 +18,7 @@ angular.module('formInputHelperApp')
 
         if (inputObject) {
           var obj = angular.fromJson(inputObject),
-              attr = obj.attr;
+            attr = obj.attr;
 
           // clean up element
           element.removeAttr('data-input-object');
@@ -28,19 +28,67 @@ angular.module('formInputHelperApp')
           element.attr('type', obj.type);
 
           // Add appropriate attributes
-          if (attr.autofocus) {element.attr('autofocus', 'autofocus');}
-          if (attr.checked) {element.attr('checked', '');}
-          if (attr.maxlength) {element.attr('maxlength', '20');}
-          if (attr.list) {element.attr('list', 'list-choices');}
-          if (attr.min) {element.attr('min', '2');}
-          if (attr.max) {element.attr('max', '20');}
-          if (attr.name) {element.attr('name', obj.type + 'Name');}
-          if (attr.pattern) {element.attr('pattern', '');}
-          if (attr.placeholder) {element.attr('placeholder', obj.type + ' field');}
-          if (attr.size) {element.attr('size', '20');}
-          if (attr.step) {element.attr('step', '1');}
-          if (attr.value) {element.attr('value', '');}
-          if (attr.accept) {element.attr('accept', 'image/*');}
+          if (attr.autofocus) {
+            element.attr('autofocus', 'autofocus');
+          } else {
+            element.removeAttr('autofocus');
+          }
+          if (attr.checked) {
+            element.attr('checked', '');
+          } else {
+            element.removeAttr('checked');
+          }
+          if (attr.maxlength) {
+            element.attr('maxlength', '20');
+          } else {
+            element.removeAttr('maxlength');
+          }
+          if (attr.list) {
+            element.attr('list', 'list-choices');
+          } else {
+            element.removeAttr('list');
+          }
+          if (attr.min) {
+            element.attr('min', '2');
+          } else {
+            element.removeAttr('min');
+          }
+          if (attr.max) {
+            element.attr('max', '20');
+          } else {
+            element.removeAttr('max');
+          }
+          if (attr.name) {
+            element.attr('name', obj.type + 'Name');
+          } else {
+            element.removeAttr('name');
+          }
+          if (attr.pattern) {
+            element.attr('pattern', '');
+          } else {
+            element.removeAttr('pattern');
+          }
+          if (attr.placeholder) {
+            element.attr('placeholder', obj.type + ' field');
+          } else {
+            element.removeAttr('placeholder');
+          }
+          if (attr.size) {
+            element.attr('size', '20');
+          } else {
+            element.removeAttr('size');
+          }
+          if (attr.step) {
+            element.attr('step', '1');
+          } else {
+            element.removeAttr('step');
+          }
+          if (attr.value) {
+            element.attr('value', '');
+          }
+          if (attr.accept) {
+            element.attr('accept', 'image/*');
+          }
 
           if (obj.type === 'reset') {
             element.attr('value', 'Reset Button');
