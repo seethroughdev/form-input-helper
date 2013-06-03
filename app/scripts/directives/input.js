@@ -82,7 +82,7 @@ angular.module('formInputHelperApp')
             element.removeAttr('placeholder');
           }
           if (attr.size) {
-            element.attr('size', '20');
+            element.attr('size', attr.size);
           } else {
             element.removeAttr('size');
           }

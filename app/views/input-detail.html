@@ -18,12 +18,14 @@
 
         <div class="form-checkbox">
             <form>
-                <label ng-repeat="(key, value) in input.attr track by $id($index)">
-                    <input type="checkbox" ng-model="input.attr[key]">{{key}}
-                </label>
+                <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
+                    <label>{{key}}</label>
+                    <input type="text" ng-model="input.valueAttr[key]" placeholder="input.valueAttr[key]">
+                </div>
             </form>
         </div>
 
+        <input type="text" ng-model="input.attr.size">
 
 
 		<pre><code>{{input|json}}</code></pre>
