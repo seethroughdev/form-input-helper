@@ -15,7 +15,7 @@ angular.module('formInputHelperApp')
       var log = $log.log; // quick log function
 
       // sort obj function from 
-      function sortObj( obj ) {
+      var sortObj = function ( obj ) {
         var key, tempArry = [], i, tempObj = {};
         for ( key in obj ) { tempArry.push(key); }
         tempArry.sort();
@@ -23,7 +23,7 @@ angular.module('formInputHelperApp')
           tempObj[tempArry[i]] = obj[tempArry[i]];
         }
         return tempObj;
-      }
+      };
 
       // Watch since resource is async
       scope.$watch('inputObject', function(inputObject) {
