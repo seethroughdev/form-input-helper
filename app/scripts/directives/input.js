@@ -33,8 +33,10 @@ angular.module('formInputHelperApp')
           // set valAttr to value
           for (var key in valAttr) {
             if (valAttr.hasOwnProperty(key)) {
-              if (valAttr[key]) {
+              if (valAttr[key] && valAttr[key].length > 0) {
                 element.attr(key, valAttr[key]);
+              } else {
+                element.removeAttr(key);
               }
             }
           }
@@ -44,6 +46,8 @@ angular.module('formInputHelperApp')
             if (boolAttr.hasOwnProperty(key)) {
               if (boolAttr[key]) {
                 element.attr(key, key);
+              } else {
+                element.removeAttr(key);
               }
             }
           }
