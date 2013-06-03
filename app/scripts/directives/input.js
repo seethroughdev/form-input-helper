@@ -14,12 +14,23 @@ angular.module('formInputHelperApp')
 
       var log = $log.log; // quick log function
 
+      // sort obj function from 
+      function sortObj( obj ) {
+        var key, tempArry = [], i, tempObj = {};
+        for ( key in obj ) { tempArry.push(key); }
+        tempArry.sort();
+        for ( i = 0; i < tempArry.length; i++ ) {
+          tempObj[tempArry[i]] = obj[tempArry[i]];
+        }
+        return tempObj;
+      }
+
       // Watch since resource is async
       scope.$watch('inputObject', function(inputObject) {
 
         if (inputObject) {
           var obj = angular.fromJson(inputObject),
-            valAttr = obj.valueAttr,
+            valAttr = sortObj(obj.valueAttr),
             boolAttr = obj.booleanAttr;
 
           // clean up element
