@@ -20,14 +20,14 @@
         <form>
             <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
                 <label>{{key}}</label>
-                <input type="text" ng-model="input.valueAttr[key]" placeholder="input.valueAttr[key]">
+                <input type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}">
             </div>
         </form>
 
         <form>
             <div ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
                 <label>
-                    <input type="checkbox" ng-model="input.booleanAttr[key]" placeholder="input.booleanAttr[key]">{{key}}
+                    <input type="checkbox" ng-model="input.booleanAttr[key]">{{key}}
                 </label>
             </div>
         </form>
