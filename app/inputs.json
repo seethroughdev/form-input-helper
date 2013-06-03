@@ -1,276 +1,4 @@
 {
-  "inputTypes": [
-    {
-      "type": "text",
-      "desc": "Here",
-      "links": {
-        "codepen": "url"
-      },
-      "attr": {
-        "list": true,
-        "pattern": true,
-        "autofocus": true,
-        "maxlength": true,
-        "name": true,
-        "readonly": false,
-        "size": true,
-        "value": true,
-        "placeholder": true
-      }
-    },
-    {
-      "type": "email",
-      "desc": "Here",
-      "html5": true,
-      "links": {
-        "codepen": "url"
-      },
-      "attr": {
-        "value": true,
-        "pattern": false,
-        "autofocus": false,
-        "readonly": true,
-        "name": true,
-        "placeholder": true
-      }
-    },
-    {
-      "type": "search",
-      "desc": "Here",
-      "links": {
-        "codepen": "url"
-      },
-      "attr": {
-        "pattern": false,
-        "value": true,
-        "name": true,
-        "readonly": false,
-        "autofocus": false,
-        "placeholder": true
-      },
-      "html5": true
-    },
-    {
-      "type": "url",
-      "desc": "Here",
-      "html5": true,
-      "attr": {
-        "placeholder": true,
-        "value": true,
-        "autofocus": false,
-        "name": true,
-        "readonly": false,
-        "pattern": false
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "tel",
-      "desc": "Here",
-      "html5": true,
-      "links": {
-        "codepen": "url"
-      },
-      "attr": {
-        "placeholder": true,
-        "pattern": false,
-        "autofocus": false,
-        "name": true,
-        "readonly": false,
-        "value": true
-      }
-    },
-    {
-      "type": "color",
-      "desc": "Here",
-      "html5": true,
-      "attr": {
-        "value": true,
-        "readonly": false,
-        "name": true,
-        "autofocus": false
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "range",
-      "desc": "Here",
-      "html5": true,
-      "links": {
-        "codepen": "url"
-      },
-      "attr": {
-        "min": true,
-        "max": true,
-        "step": true,
-        "value": true,
-        "autofocus": false,
-        "name": true,
-        "readonly": false
-      }
-    },
-    {
-      "type": "date",
-      "desc": "Here",
-      "html5": true,
-      "attr": {
-        "min": true,
-        "max": true,
-        "step": true,
-        "value": true,
-        "autofocus": false,
-        "name": true,
-        "readonly": false
-      },
-      "links": {
-        "codepen": "url"
-      },
-      "formats": [
-        "date",
-        "datetime",
-        "datetime-local",
-        "month",
-        "week",
-        "time"
-      ]
-    },
-    {
-      "type": "checkbox",
-      "desc": "Here",
-      "attr": {
-        "checked": true,
-        "disabled": true,
-        "autofocus": false,
-        "name": true,
-        "value": true,
-        "readonly": false
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "radio",
-      "desc": "Here",
-      "attr": {
-        "checked": true,
-        "disabled": true,
-        "value": true,
-        "name": true,
-        "readonly": false,
-        "autofocus": false
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "reset",
-      "desc": "Here",
-      "links": {
-        "codepen": "url"
-      },
-      "attr": {
-        "value": true
-      }
-    },
-    {
-      "type": "submit",
-      "desc": "Here",
-      "attr": {
-        "value": true,
-        "name": true
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "file",
-      "desc": "Here",
-      "attr": {
-        "accept": true,
-        "value": true,
-        "name": true,
-        "size": true,
-        "readonly": false,
-        "multiple": true,
-        "maxlength": true,
-        "autofocus": false
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "image",
-      "desc": "Here",
-      "links": {
-        "codepen": "url"
-      },
-      "attr": {
-        "autofocus": false,
-        "border": true,
-        "align": true,
-        "value": true,
-        "readonly": false,
-        "name": true
-      }
-    },
-    {
-      "type": "password",
-      "desc": "Here",
-      "attr": {
-        "autofocus": false,
-        "value": true,
-        "name": true,
-        "size": true,
-        "readonly": false
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "hidden",
-      "desc": "Here",
-      "attr": {
-        "name": true,
-        "readonly": false,
-        "value": true
-      },
-      "links": {
-        "codepen": "url"
-      }
-    },
-    {
-      "type": "number",
-      "desc": "Here",
-      "html5": true,
-      "attr": {
-        "placeholder": true,
-        "min": true,
-        "max": true,
-        "step": true,
-        "value": true,
-        "name": true,
-        "autofocus": false,
-        "readonly": false
-      },
-      "links": {
-        "codepen": "url"
-      },
-      "javascript": [
-        "stepUp()",
-        "stepDown()",
-        "valueAsNumber()"
-      ]
-    }
-  ],
   "formElements": [
     {
       "type": "select",
@@ -283,34 +11,416 @@
       "codepen": "url"
     },
     {
+      "html5": true,
+      "codepen": "url",
       "type": "datalist",
-      "desc": "Here",
-      "html5": true,
-      "codepen": "url"
+      "desc": "Here"
     },
     {
+      "html5": true,
+      "codepen": "url",
       "type": "keygen",
-      "desc": "Here",
-      "html5": true,
-      "codepen": "url"
+      "desc": "Here"
     },
     {
+      "html5": true,
+      "codepen": "url",
       "type": "output",
-      "desc": "Here",
-      "html5": true,
-      "codepen": "url"
+      "desc": "Here"
     },
     {
+      "html5": true,
+      "codepen": "url",
       "type": "progress",
-      "desc": "Here",
-      "html5": true,
-      "codepen": "url"
+      "desc": "Here"
     },
     {
-      "type": "meter",
-      "desc": "Here",
       "html5": true,
-      "codepen": "url"
+      "codepen": "url",
+      "type": "meter",
+      "desc": "Here"
+    }
+  ],
+  "inputTypes": [
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.text.html"
+      },
+      "valueAttr": {
+        "pattern": "[a-zA-Z0-9]+",
+        "size": "20",
+        "placeholder": "Text goes here.",
+        "maxlength": "20",
+        "list": "list-choices"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "autocomplete": "off",
+        "required": "required",
+        "readonly": false,
+        "disabled": false
+      },
+      "type": "text",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.email.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "readonly": false,
+        "required": "required",
+        "disabled": false
+      },
+      "valueAttr": {
+        "pattern": false,
+        "multiple": "multiple",
+        "placeholder": "Email goes here.",
+        "maxlength": "20",
+        "list": "email-list"
+      },
+      "type": "email",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.search.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "autocomplete": "off",
+        "required": "required",
+        "readonly": false,
+        "disabled": false
+      },
+      "valueAttr": {
+        "size": "20",
+        "pattern": "[a-zA-Z0-9]+",
+        "placeholder": "Search goes here.",
+        "maxlength": "20"
+      },
+      "type": "search",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.url.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "autocomplete": "off",
+        "required": "required",
+        "readonly": false,
+        "disabled": false
+      },
+      "valueAttr": {
+        "size": "20",
+        "pattern": false,
+        "placeholder": "URL goes here.",
+        "list": "url-list",
+        "maxlength": "20"
+      },
+      "type": "url",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.tel.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "autocomplete": "off",
+        "required": "required",
+        "readonly": false,
+        "disabled": false
+      },
+      "valueAttr": {
+        "size": "20",
+        "pattern": "\\d{3}[\\-]\\d{3}[\\-]\\d{4}",
+        "placeholder": "Telephone goes here.",
+        "maxlength": "20",
+        "list": "telephone-list"
+      },
+      "type": "tel",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.color.html"
+      },
+      "booleanAttr": {
+        "autocomplete": "off",
+        "disabled": false,
+        "autofocus": "autofocus"
+      },
+      "valueAttr": {
+        "list": "color-list"
+      },
+      "type": "color",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.range.html"
+      },
+      "booleanAttr": {
+        "autocomplete": "off",
+        "disabled": false,
+        "autofocus": "autofocus"
+      },
+      "valueAttr": {
+        "min": "1",
+        "max": "10",
+        "step": "2"
+      },
+      "type": "range",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "valueAttr": {
+        "min": "2001-01-01",
+        "list": "list-choices",
+        "max": "2010-12-31",
+        "step": "1"
+      },
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "autocomplete": "off",
+        "required": "required",
+        "readonly": false,
+        "disabled": false
+      },
+      "type": "date",
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ],
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.checkbox.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "readonly": true,
+        "required": "required",
+        "disabled": false
+      },
+      "valueAttr": {
+        "checked": "checked",
+        "value": "Checkbox value"
+      },
+      "type": "checkbox",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.radio.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "readonly": true,
+        "required": "required",
+        "disabled": false
+      },
+      "valueAttr": {
+        "checked": true,
+        "value": "Radio button value"
+      },
+      "type": "radio",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.reset.html"
+      },
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": "autofocus"
+      },
+      "valueAttr": {
+        "value": "Reset Button"
+      },
+      "type": "reset",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.submit.html"
+      },
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": "autofocus"
+      },
+      "valueAttr": {
+        "formaction": "http://form-submission-url.com",
+        "formmethod": "post",
+        "formtarget": "_self",
+        "formenctype": "application/x-www-form-urlencoded",
+        "value": "Submit",
+        "formnovalidate": "formnovalidate"
+      },
+      "type": "submit",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.image.html"
+      },
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": "autofocus"
+      },
+      "valueAttr": {
+        "height": "50",
+        "formnovalidate": "formnovalidate",
+        "formaction": "http://form-submission-url.com",
+        "src": "//url-of-image.com",
+        "alt": "Alternate text for image",
+        "width": "50",
+        "formtarget": "_self",
+        "formenctype": "application/x-www-form-urlencoded",
+        "value": "Submit",
+        "formmethod": "post"
+      },
+      "type": "image",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.button.html"
+      },
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": "autofocus"
+      },
+      "valueAttr": {
+        "value": "Simple Button"
+      },
+      "type": "button",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "disabled": false,
+        "required": "required"
+      },
+      "valueAttr": {
+        "accept": "image/*",
+        "multiple": "multiple"
+      },
+      "type": "file",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
+      },
+      "attr": {
+        "autofocus": false,
+        "border": true,
+        "align": true,
+        "value": true,
+        "readonly": false,
+        "name": true
+      },
+      "type": "image",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.password.html"
+      },
+      "booleanAttr": {
+        "autofocus": "autofocus",
+        "autocomplete": "off",
+        "required": "required",
+        "readonly": false,
+        "disabled": false
+      },
+      "valueAttr": {
+        "pattern": "[a-zA-Z0-9]+",
+        "size": "20",
+        "placeholder": "Password goes here.",
+        "maxlength": "20"
+      },
+      "type": "password",
+      "desc": "Here"
+    },
+    {
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.hidden.html"
+      },
+      "booleanAttr": {
+        "disabled": false
+      },
+      "valueAttr": {
+        "value": "Hidden value to pass on"
+      },
+      "type": "hidden",
+      "desc": "Here"
+    },
+    {
+      "html5": true,
+      "links": {
+        "codepen": "url",
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
+      },
+      "attr": {
+        "placeholder": true,
+        "min": true,
+        "autofocus": false,
+        "readonly": false,
+        "value": true,
+        "max": true,
+        "step": true,
+        "name": true
+      },
+      "javascript": [
+        "stepUp()",
+        "stepDown()",
+        "valueAsNumber()"
+      ],
+      "type": "number",
+      "desc": "Here"
     }
   ]
 }
