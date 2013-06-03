@@ -1,4 +1,386 @@
 {
+  "inputTypes": [
+    {
+      "type": "text",
+      "desc": "Here",
+      "valueAttr": {
+        "pattern": "[a-zA-Z0-9]+",
+        "maxlength": "20",
+        "size": "20",
+        "placeholder": "Text goes here.",
+        "list": "list-choices"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.text.html",
+        "codepen": "url"
+      },
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "readonly": false,
+        "autofocus": false
+      }
+    },
+    {
+      "type": "email",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "required": false,
+        "readonly": false,
+        "disabled": false,
+        "autofocus": false
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.email.html",
+        "codepen": "url"
+      },
+      "valueAttr": {
+        "multiple": "multiple",
+        "maxlength": "20",
+        "list": "email-list",
+        "pattern": false,
+        "placeholder": "Email goes here."
+      }
+    },
+    {
+      "type": "search",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.search.html",
+        "codepen": "url"
+      },
+      "valueAttr": {
+        "size": "20",
+        "maxlength": "20",
+        "pattern": "[a-zA-Z0-9]+",
+        "placeholder": "Search goes here."
+      }
+    },
+    {
+      "type": "url",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "size": "20",
+        "list": "url-list",
+        "maxlength": "20",
+        "placeholder": "URL goes here.",
+        "pattern": false
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.url.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "tel",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.tel.html",
+        "codepen": "url"
+      },
+      "valueAttr": {
+        "maxlength": "20",
+        "list": "telephone-list",
+        "size": "20",
+        "placeholder": "Telephone goes here.",
+        "pattern": "\\d{3}[\\-]\\d{3}[\\-]\\d{4}"
+      }
+    },
+    {
+      "type": "color",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "disabled": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "list": "color-list"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.color.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "booleanAttr": {
+        "autocomplete": false,
+        "disabled": false,
+        "autofocus": false
+      },
+      "type": "range",
+      "desc": "Here",
+      "html5": true,
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.range.html",
+        "codepen": "url"
+      },
+      "valueAttr": {
+        "min": "1",
+        "max": "10",
+        "step": "2"
+      }
+    },
+    {
+      "type": "date",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "min": "2001-01-01",
+        "max": "2010-12-31",
+        "step": "1",
+        "list": "list-choices"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ]
+    },
+    {
+      "type": "checkbox",
+      "desc": "Here",
+      "booleanAttr": {
+        "required": false,
+        "disabled": false,
+        "readonly": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "checked": "checked",
+        "value": "Checkbox value"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.checkbox.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "radio",
+      "desc": "Here",
+      "booleanAttr": {
+        "required": false,
+        "disabled": false,
+        "readonly": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "checked": true,
+        "value": "Radio button value"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.radio.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "reset",
+      "desc": "Here",
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "value": "Reset Button"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.reset.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "submit",
+      "desc": "Here",
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "formnovalidate": "formnovalidate",
+        "formtarget": "_self",
+        "formenctype": "application/x-www-form-urlencoded",
+        "formmethod": "post",
+        "formaction": "http://form-submission-url.com",
+        "value": "Submit"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.submit.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "image",
+      "desc": "Here",
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "height": "50",
+        "width": "50",
+        "src": "//url-of-image.com",
+        "alt": "Alternate text for image",
+        "formnovalidate": "formnovalidate",
+        "formtarget": "_self",
+        "formenctype": "application/x-www-form-urlencoded",
+        "formmethod": "post",
+        "formaction": "http://form-submission-url.com",
+        "value": "Submit"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.image.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "button",
+      "desc": "Here",
+      "booleanAttr": {
+        "disabled": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "value": "Simple Button"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.button.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "file",
+      "desc": "Here",
+      "booleanAttr": {
+        "required": false,
+        "disabled": false,
+        "autofocus": false
+      },
+      "valueAttr": {
+        "accept": "image/*",
+        "multiple": "multiple"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "image",
+      "desc": "Here",
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "attr": {
+        "autofocus": false,
+        "border": true,
+        "align": true,
+        "value": true,
+        "readonly": false,
+        "name": true
+      }
+    },
+    {
+      "type": "password",
+      "desc": "Here",
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "placeholder": "Password goes here.",
+        "pattern": "[a-zA-Z0-9]+",
+        "size": "20",
+        "maxlength": "20"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.password.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "booleanAttr": {
+        "disabled": false
+      },
+      "type": "hidden",
+      "desc": "Here",
+      "valueAttr": {
+        "value": "Hidden value to pass on"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.hidden.html",
+        "codepen": "url"
+      }
+    },
+    {
+      "type": "number",
+      "desc": "Here",
+      "html5": true,
+      "attr": {
+        "placeholder": true,
+        "min": true,
+        "max": true,
+        "step": true,
+        "value": true,
+        "name": true,
+        "autofocus": false,
+        "readonly": false
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "javascript": [
+        "stepUp()",
+        "stepDown()",
+        "valueAsNumber()"
+      ]
+    }
+  ],
   "formElements": [
     {
       "type": "select",
@@ -11,416 +393,34 @@
       "codepen": "url"
     },
     {
-      "html5": true,
-      "codepen": "url",
       "type": "datalist",
-      "desc": "Here"
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
     },
     {
-      "html5": true,
-      "codepen": "url",
       "type": "keygen",
-      "desc": "Here"
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
     },
     {
-      "html5": true,
-      "codepen": "url",
       "type": "output",
-      "desc": "Here"
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
     },
     {
-      "html5": true,
-      "codepen": "url",
       "type": "progress",
-      "desc": "Here"
+      "desc": "Here",
+      "html5": true,
+      "codepen": "url"
     },
     {
-      "html5": true,
-      "codepen": "url",
       "type": "meter",
-      "desc": "Here"
-    }
-  ],
-  "inputTypes": [
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.text.html"
-      },
-      "valueAttr": {
-        "pattern": "[a-zA-Z0-9]+",
-        "size": "20",
-        "placeholder": "Text goes here.",
-        "maxlength": "20",
-        "list": "list-choices"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "autocomplete": "off",
-        "required": "required",
-        "readonly": false,
-        "disabled": false
-      },
-      "type": "text",
-      "desc": "Here"
-    },
-    {
+      "desc": "Here",
       "html5": true,
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.email.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "readonly": false,
-        "required": "required",
-        "disabled": false
-      },
-      "valueAttr": {
-        "pattern": false,
-        "multiple": "multiple",
-        "placeholder": "Email goes here.",
-        "maxlength": "20",
-        "list": "email-list"
-      },
-      "type": "email",
-      "desc": "Here"
-    },
-    {
-      "html5": true,
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.search.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "autocomplete": "off",
-        "required": "required",
-        "readonly": false,
-        "disabled": false
-      },
-      "valueAttr": {
-        "size": "20",
-        "pattern": "[a-zA-Z0-9]+",
-        "placeholder": "Search goes here.",
-        "maxlength": "20"
-      },
-      "type": "search",
-      "desc": "Here"
-    },
-    {
-      "html5": true,
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.url.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "autocomplete": "off",
-        "required": "required",
-        "readonly": false,
-        "disabled": false
-      },
-      "valueAttr": {
-        "size": "20",
-        "pattern": false,
-        "placeholder": "URL goes here.",
-        "list": "url-list",
-        "maxlength": "20"
-      },
-      "type": "url",
-      "desc": "Here"
-    },
-    {
-      "html5": true,
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.tel.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "autocomplete": "off",
-        "required": "required",
-        "readonly": false,
-        "disabled": false
-      },
-      "valueAttr": {
-        "size": "20",
-        "pattern": "\\d{3}[\\-]\\d{3}[\\-]\\d{4}",
-        "placeholder": "Telephone goes here.",
-        "maxlength": "20",
-        "list": "telephone-list"
-      },
-      "type": "tel",
-      "desc": "Here"
-    },
-    {
-      "html5": true,
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.color.html"
-      },
-      "booleanAttr": {
-        "autocomplete": "off",
-        "disabled": false,
-        "autofocus": "autofocus"
-      },
-      "valueAttr": {
-        "list": "color-list"
-      },
-      "type": "color",
-      "desc": "Here"
-    },
-    {
-      "html5": true,
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.range.html"
-      },
-      "booleanAttr": {
-        "autocomplete": "off",
-        "disabled": false,
-        "autofocus": "autofocus"
-      },
-      "valueAttr": {
-        "min": "1",
-        "max": "10",
-        "step": "2"
-      },
-      "type": "range",
-      "desc": "Here"
-    },
-    {
-      "html5": true,
-      "valueAttr": {
-        "min": "2001-01-01",
-        "list": "list-choices",
-        "max": "2010-12-31",
-        "step": "1"
-      },
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "autocomplete": "off",
-        "required": "required",
-        "readonly": false,
-        "disabled": false
-      },
-      "type": "date",
-      "formats": [
-        "date",
-        "datetime",
-        "datetime-local",
-        "month",
-        "week",
-        "time"
-      ],
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.checkbox.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "readonly": true,
-        "required": "required",
-        "disabled": false
-      },
-      "valueAttr": {
-        "checked": "checked",
-        "value": "Checkbox value"
-      },
-      "type": "checkbox",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.radio.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "readonly": true,
-        "required": "required",
-        "disabled": false
-      },
-      "valueAttr": {
-        "checked": true,
-        "value": "Radio button value"
-      },
-      "type": "radio",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.reset.html"
-      },
-      "booleanAttr": {
-        "disabled": false,
-        "autofocus": "autofocus"
-      },
-      "valueAttr": {
-        "value": "Reset Button"
-      },
-      "type": "reset",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.submit.html"
-      },
-      "booleanAttr": {
-        "disabled": false,
-        "autofocus": "autofocus"
-      },
-      "valueAttr": {
-        "formaction": "http://form-submission-url.com",
-        "formmethod": "post",
-        "formtarget": "_self",
-        "formenctype": "application/x-www-form-urlencoded",
-        "value": "Submit",
-        "formnovalidate": "formnovalidate"
-      },
-      "type": "submit",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.image.html"
-      },
-      "booleanAttr": {
-        "disabled": false,
-        "autofocus": "autofocus"
-      },
-      "valueAttr": {
-        "height": "50",
-        "formnovalidate": "formnovalidate",
-        "formaction": "http://form-submission-url.com",
-        "src": "//url-of-image.com",
-        "alt": "Alternate text for image",
-        "width": "50",
-        "formtarget": "_self",
-        "formenctype": "application/x-www-form-urlencoded",
-        "value": "Submit",
-        "formmethod": "post"
-      },
-      "type": "image",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.button.html"
-      },
-      "booleanAttr": {
-        "disabled": false,
-        "autofocus": "autofocus"
-      },
-      "valueAttr": {
-        "value": "Simple Button"
-      },
-      "type": "button",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "disabled": false,
-        "required": "required"
-      },
-      "valueAttr": {
-        "accept": "image/*",
-        "multiple": "multiple"
-      },
-      "type": "file",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
-      },
-      "attr": {
-        "autofocus": false,
-        "border": true,
-        "align": true,
-        "value": true,
-        "readonly": false,
-        "name": true
-      },
-      "type": "image",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.password.html"
-      },
-      "booleanAttr": {
-        "autofocus": "autofocus",
-        "autocomplete": "off",
-        "required": "required",
-        "readonly": false,
-        "disabled": false
-      },
-      "valueAttr": {
-        "pattern": "[a-zA-Z0-9]+",
-        "size": "20",
-        "placeholder": "Password goes here.",
-        "maxlength": "20"
-      },
-      "type": "password",
-      "desc": "Here"
-    },
-    {
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.hidden.html"
-      },
-      "booleanAttr": {
-        "disabled": false
-      },
-      "valueAttr": {
-        "value": "Hidden value to pass on"
-      },
-      "type": "hidden",
-      "desc": "Here"
-    },
-    {
-      "html5": true,
-      "links": {
-        "codepen": "url",
-        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html"
-      },
-      "attr": {
-        "placeholder": true,
-        "min": true,
-        "autofocus": false,
-        "readonly": false,
-        "value": true,
-        "max": true,
-        "step": true,
-        "name": true
-      },
-      "javascript": [
-        "stepUp()",
-        "stepDown()",
-        "valueAsNumber()"
-      ],
-      "type": "number",
-      "desc": "Here"
+      "codepen": "url"
     }
   ]
 }
