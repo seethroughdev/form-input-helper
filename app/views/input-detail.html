@@ -16,16 +16,22 @@
         </form>
         <!-- Instead, use the box created on the page! -->
 
-        <div class="form-checkbox">
-            <form>
-                <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
-                    <label>{{key}}</label>
-                    <input type="text" ng-model="input.valueAttr[key]" placeholder="input.valueAttr[key]">
-                </div>
-            </form>
-        </div>
 
-        <input type="text" ng-model="input.attr.size">
+        <form>
+            <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
+                <label>{{key}}</label>
+                <input type="text" ng-model="input.valueAttr[key]" placeholder="input.valueAttr[key]">
+            </div>
+        </form>
+
+        <form>
+            <div ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
+                <label>
+                    <input type="checkbox" ng-model="input.booleanAttr[key]" placeholder="input.booleanAttr[key]">{{key}}
+                </label>
+            </div>
+        </form>
+
 
 
 		<pre><code>{{input|json}}</code></pre>

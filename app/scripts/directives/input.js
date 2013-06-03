@@ -19,8 +19,8 @@ angular.module('formInputHelperApp')
 
         if (inputObject) {
           var obj = angular.fromJson(inputObject),
-            vAttr = obj.valueAttr,
-            bAttr = obj.booleanAttr;
+            valAttr = obj.valueAttr,
+            boolAttr = obj.booleanAttr;
 
           // clean up element
           element.removeAttr('data-input-object');
@@ -30,89 +30,25 @@ angular.module('formInputHelperApp')
           // set field type
           element.attr('type', obj.type);
 
-          for (var key in vAttr) {
-            if (vAttr.hasOwnProperty(key)) {
-              console.log(key + ' is ' + vAttr[key]);
-              if (vAttr[key]) {
-                element.attr(key, vAttr[key])
+          // set valAttr to value
+          for (var key in valAttr) {
+            if (valAttr.hasOwnProperty(key)) {
+              if (valAttr[key]) {
+                element.attr(key, valAttr[key]);
               }
             }
           }
 
-          // Add appropriate attributes
-          // if (attr.autofocus) {
-          //   element.attr('autofocus', 'autofocus');
-          // } else {
-          //   element.removeAttr('autofocus');
-          // }
-          // if (attr.checked) {
-          //   element.attr('checked', 'checked');
-          // } else {
-          //   element.removeAttr('checked');
-          //   element[0].checked = false;
-          // }
-          // if (attr.maxlength) {
-          //   element.attr('maxlength', '20');
-          // } else {
-          //   element.removeAttr('maxlength');
-          // }
-          // if (attr.list) {
-          //   element.attr('list', 'list-choices');
-          // } else {
-          //   element.removeAttr('list');
-          // }
-          // if (attr.min) {
-          //   element.attr('min', '2');
-          // } else {
-          //   element.removeAttr('min');
-          // }
-          // if (attr.max) {
-          //   element.attr('max', '20');
-          // } else {
-          //   element.removeAttr('max');
-          // }
-          // if (attr.readonly) {
-          //   element.attr('readonly', 'readonly');
-          // } else {
-          //   element.removeAttr('readonly');
-          // }
-          // if (attr.name) {
-          //   element.attr('name', obj.type + 'Name');
-          // } else {
-          //   element.removeAttr('name');
-          // }
-          // if (attr.pattern) {
-          //   element.attr('pattern', '[a-zA-Z0-9]+');
-          // } else {
-          //   element.removeAttr('pattern');
-          // }
-          // if (attr.placeholder) {
-          //   element.attr('placeholder', obj.type + ' field');
-          // } else {
-          //   element.removeAttr('placeholder');
-          // }
-          // if (attr.size) {
-          //   element.attr('size', attr.size);
-          // } else {
-          //   element.removeAttr('size');
-          // }
-          // if (attr.step) {
-          //   element.attr('step', '1');
-          // } else {
-          //   element.removeAttr('step');
-          // }
-          // if (attr.value) {
-          //   element.attr('value', element.val() || '');
-          // }
-          // if (attr.accept) {
-          //   element.attr('accept', 'image/*');
-          // }
-          // if (obj.type === 'reset') {
-          //   element.attr('value', 'Reset Button');
-          // }
-          // if (obj.type === 'submit') {
-          //   element.attr('value', 'Submit');
-          // }
+          // set boolAttr fields to same value
+          for (var key in boolAttr) {
+            if (boolAttr.hasOwnProperty(key)) {
+              if (boolAttr[key]) {
+                element.attr(key, key);
+              }
+            }
+          }
+
+          // wrap radio and checkboxes with labels
           if ((element.parent().hasClass('label-container') === false) &&
             (obj.type === 'radio' || obj.type === 'checkbox')) {
             element.wrap('<label class="label-container">');
