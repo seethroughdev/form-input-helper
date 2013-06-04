@@ -67,7 +67,7 @@ angular.module('formInputHelperApp')
           }
 
           // wrap radio and checkboxes with labels
-          if ((element.parent().hasClass('label-container') === false) &&
+          if (!(element.parent().hasClass('label-container')) &&
             (obj.type === 'radio' || obj.type === 'checkbox')) {
             element.wrap('<label class="label-container">');
             element.parent()
