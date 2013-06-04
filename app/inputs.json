@@ -1,4 +1,231 @@
 {
+  "attrInfo": [
+    {
+      "name": "alt",
+      "desc": "This is the alt description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "autocomplete",
+      "desc": "This is the autocomplete description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "disabled",
+      "desc": "This is the disabled description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "formnovalidate",
+      "desc": "This is the formnovalidate description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "formtarget",
+      "desc": "This is the formtarget description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "formenctype",
+      "desc": "This is the formenctype description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "formaction",
+      "desc": "This is the formaction description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "formmethod",
+      "desc": "This is the formmethod description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "height",
+      "desc": "This is the height description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "list",
+      "desc": "This is the list description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "max",
+      "desc": "This is the max description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "maxlength",
+      "desc": "This is the maxlength description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "min",
+      "desc": "This is the min description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "multiple",
+      "desc": "This is the multiple description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "name",
+      "desc": "This is the name description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "pattern",
+      "desc": "This is the pattern description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "placeholder",
+      "desc": "This is the placeholder description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "readonly",
+      "desc": "This is the readonly description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "required",
+      "desc": "This is the required description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "size",
+      "desc": "This is the size description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "src",
+      "desc": "This is the src description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "step",
+      "desc": "This is the step description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "type",
+      "desc": "This is the type description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "value",
+      "desc": "This is the value description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    },
+    {
+      "name": "width",
+      "desc": "This is the width description.",
+      "notes": "extra notes about attr",
+      "links": {
+        "w3c": "http://w3c.org/okay",
+        "caniuse": "http://caniuse.com/okay"
+      }
+    }
+  ],
   "inputTypes": [
     {
       "type": "text",
