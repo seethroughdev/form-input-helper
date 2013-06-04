@@ -40,6 +40,7 @@ angular.module('formInputHelperApp')
 
           // set field type
           element.attr('type', obj.type);
+          element.attr('name', obj.type + '_identifier');
 
           // set valAttr to value
           for (var key in valAttr) {
