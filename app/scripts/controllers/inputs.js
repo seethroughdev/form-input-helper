@@ -6,5 +6,6 @@ angular.module('formInputHelperApp')
     $scope.inputs = d.inputTypes;
 
     $scope.size = 30;
+
   });
 });

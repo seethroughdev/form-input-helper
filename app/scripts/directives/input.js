@@ -14,7 +14,7 @@ angular.module('formInputHelperApp')
 
       var log = $log.log; // quick log function
 
-      // sort obj function from 
+      // sort obj function from
       var sortObj = function ( obj ) {
         var key, tempArry = [], i, tempObj = {};
         for ( key in obj ) { tempArry.push(key); }
@@ -27,6 +27,8 @@ angular.module('formInputHelperApp')
 
       // Watch since resource is async
       scope.$watch('inputObject', function(inputObject) {
+
+        var key;
 
         if (inputObject) {
           var obj = angular.fromJson(inputObject),
@@ -43,7 +45,7 @@ angular.module('formInputHelperApp')
           element.attr('name', obj.type + '_identifier');
 
           // set valAttr to value
-          for (var key in valAttr) {
+          for (key in valAttr) {
             if (valAttr.hasOwnProperty(key)) {
               if (valAttr[key] && valAttr[key].length > 0) {
                 element.attr(key, valAttr[key]);
@@ -54,7 +56,7 @@ angular.module('formInputHelperApp')
           }
 
           // set boolAttr fields to same value
-          for (var key in boolAttr) {
+          for (key in boolAttr) {
             if (boolAttr.hasOwnProperty(key)) {
               if (boolAttr[key]) {
                 element.attr(key, key);

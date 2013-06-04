@@ -3,7 +3,7 @@
 	<div class="pure-u element-container">
 		<h1>Input: {{input.type}}</h1>
 
-        <p>{{boundHTML}}</p>
+        <pre><code class="language-html">{{boundHTML}}</code></pre>
 
         <!-- Do not copy this source directly, it is compiled by Angular -->
         <div ng-if="{{input.attr.list}}" data-datalist data-input-object="{{input}}"></div>
@@ -34,6 +34,6 @@
 
 
 
-		<pre><code>{{input|json}}</code></pre>
+		<pre><code class="language-js">{{input|json}}</code></pre>
     </div>
 </div>
