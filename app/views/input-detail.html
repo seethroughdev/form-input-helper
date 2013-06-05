@@ -19,14 +19,14 @@
 
         <form>
             <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
-                <label>{{key}}</label>
+                <label class="{{key}}" show-hover-info>{{key}}</label>
                 <input type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}">
             </div>
         </form>
 
         <form>
             <div ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
-                <label>
+                <label class="{{key}}" show-hover-info>
                     <input type="checkbox" ng-model="input.booleanAttr[key]">{{key}}
                 </label>
             </div>
@@ -35,6 +35,10 @@
         <ul class="links">
             <li ng-repeat="(key, value) in input.links track by $id($index)"><a ng-href="{{input.links[key]}}">{{key}}</a></li>
         </ul>
+
+        <div id="attribute-info-box">
+            
+        </div>
 
 
 
