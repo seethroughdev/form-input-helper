@@ -26,13 +26,19 @@ angular.module('formInputHelperApp')
     };
 
     // assign $scope.input
-    var input = $scope.input = findInput(inputType);
+    $scope.input = findInput(inputType);
 
-    // navigation links
+    // create navigation links
     var prevInputType = $scope.prevInputType = findInput(inputType, -1);
     var nextInputType = $scope.nextInputType = findInput(inputType, 1);
-    $scope.prevInputTypeLink = buildTypeUrl(prevInputType.type);
-    $scope.nextInputTypeLink = buildTypeUrl(nextInputType.type);
+
+    if (prevInputType) {
+      $scope.prevInputTypeLink = buildTypeUrl(prevInputType.type);
+    }
+
+    if (nextInputType) {
+      $scope.nextInputTypeLink = buildTypeUrl(nextInputType.type);
+    }
 
 
     $scope.selectorType = 'input[type="' + inputType + '"]';
