@@ -25,6 +25,11 @@
                 </label>
             </div>
         </form>
+
+        <div class="style-selector">
+            {{styleSelector}}
+        </div>
+
         <ul class="links">
             <li ng-repeat="(key, value) in input.links track by $id($index)"><a ng-href="{{input.links[key]}}">{{key}}</a></li>
         </ul>
