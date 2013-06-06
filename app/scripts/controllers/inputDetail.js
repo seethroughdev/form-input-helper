@@ -24,7 +24,7 @@ angular.module('formInputHelperApp')
 
     // $scope.input.attr.pattern = false;
 
-    $scope.styleSelector = 'input[type="' + $scope.input.type + '"]';
+    $scope.selectorType = 'input[type="' + $scope.input.type + '"]';
 
     return;
   });

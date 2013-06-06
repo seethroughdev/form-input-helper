@@ -1,0 +1,46 @@
+<div class="css-tip">
+    <p>There's lots of great things you can do with styling inputs.  Here's a
+        little bit to get you started.  But I would definitely recommend playing
+        with this input in a <a ng-href="{{input.links.codepen}}">Codepen</a>
+    </p>
+    <ul>
+        <li>Select this input:  {{selectorType}}</li>
+        <li>
+            Psuedo selectors are going to be your best friend when styling
+            your inputs.
+
+            For instance, you can grab the field when its focused?  disabled?
+            invalid?  All with psuedo selectors!  Just add the colon and proper
+            psuedo selector after.
+
+            <pre><code>{{selectorType}}:focus, {{selectorType}}:invalid,
+                {{selectorType}}:required</code></pre>
+        </li>
+        <li>
+            How about all selectors except checkboxes?  With modern browsers, its no problem!
+
+            <pre><code>input:not[type="checkbox"]</code></pre>
+        </li>
+        <li>
+            Or you can chain selectors together!
+
+            <pre><code>{{selectorType}}:focus:invalid // will only apply styles
+                to fields that are focused and invalid at the same time.</code></pre>
+        </li>
+        <li>
+          In case you can't tell.  I'm pretty passionate about styling forms.
+          Just remember, there's lots you can do with styling.
+          And now with all these great selectors.  Your possibilities are so much wider.
+        </li>
+        <li>
+          Want to learn more about styling forms and selectors?  Here's a couple great
+          places to start:
+            <ul>
+              <li><a href="http://css-tricks.com/">CSS Tricks</a></li>
+              <li><a href="https://github.com/twitter/bootstrap/blob/master/less/forms.less">Twitter Bootstrap Source</a></li>
+              <li><a href="#">Another link or two.</a></li>
+              <li><a href="#">Another link or two.</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
