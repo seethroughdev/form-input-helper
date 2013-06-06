@@ -1,7 +1,7 @@
 <div id="layout" class="pure-g-r">
 	<div class="pure-u-1-6 col" ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></div>
 
-        <div class="pure-u-1-6 col attribute-container">
+    <div class="pure-u-1-4 col attribute-container">
         <form>
             <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
                 <label class="{{key}}" show-hover-info>{{key}}</label>
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <div class="pure-u-2-3 col element-container">
+    <div class="pure-u-7-12 col element-container">
 
         <div class="clearfix">
     		<h1 class="back">Input: {{input.type}}</h1>
@@ -41,10 +41,11 @@
         <pre><code class="language-html">{{boundHTML}}</code></pre>
         <!-- Do not copy this source directly, it is compiled by Angular -->
         <div ng-if="{{input.attr.list}}" data-datalist data-input-object="{{input}}"></div>
-        <form id="display-form" class="pure-form">
+        <form id="display-form">
             <input data-input-helper data-input-object="{{input}}" binding-html="boundHTML">
-            <input class="pure-button" type="submit" value="Submit">
+            <input class="" type="submit" value="Submit">
         </form>
+        <br/><br/>
         <!-- Instead, use the box created on the page! -->
         <button class="btn" data-ng-click="slide='desc'">Description</button>
         <button class="btn" data-ng-click="slide='css'">CSS</button>
