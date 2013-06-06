@@ -2,15 +2,6 @@
     padding: 1em;
 }
 
-#{$all-text-inputs} {
-    width: 100%;
-    margin-bottom: .5em;
-}
-
-label {
-    display: block;
-}
-
 .slide-enter, .slide-leave {
   -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
   -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
