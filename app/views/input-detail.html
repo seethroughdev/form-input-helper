@@ -10,7 +10,20 @@
             <input class="pure-button" type="submit" value="Submit">
         </form>
         <!-- Instead, use the box created on the page! -->
-        <css-tip data-input-object="{{input}}"></css-tip>
+        <button class="btn" data-ng-click="slide='desc'">Description</button>
+        <button class="btn" data-ng-click="slide='css'">CSS</button>
+        <button class="btn" data-ng-click="slide='something'">Something Else</button>
+        <div data-ng-switch="slide" data-ng-animate="'slide'" class="slide-frame">
+            <div data-ng-switch-when="desc">
+                {{input.desc}}
+            </div>
+            <div data-ng-switch-when="css">
+                <css-tip data-input-object="{{input}}"></css-tip>
+            </div>
+            <div data-ng-switch-when="something">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, debitis voluptas vitae perferendis fugiat iste eius inventore repudiandae odio hic temporibus ducimus asperiores quas repellendus adipisci nisi quod reiciendis rem.</div>
+            </div>
+        </div>
 
     </div>
     <div class="pure-u-1-6 col attribute-container">
@@ -27,6 +40,7 @@
                 </label>
             </div>
         </form>
+
 
         <div class="style-selector">
             {{styleSelector}}

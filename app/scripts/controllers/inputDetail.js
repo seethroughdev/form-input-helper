@@ -26,6 +26,8 @@ angular.module('formInputHelperApp')
 
     $scope.selectorType = 'input[type="' + $scope.input.type + '"]';
 
+    $scope.slide = 'desc';
+
     return;
   });
 
