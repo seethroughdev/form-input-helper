@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .controller('InputDetailCtrl', function($scope, inputService, $routeParams, $log) {
+  .controller('InputDetailCtrl', function($scope, inputService, $routeParams, $log, $location) {
 
   var log = $log.log;
 
@@ -11,7 +11,7 @@ angular.module('formInputHelperApp')
     var inputsList = d.inputTypes;
     // iterate through input types based on $routeParam
     var findInput = function(val, offset) {
-      if (!offset) {
+      if (!offset || !angular.isNumber(offset)) {
         offset = 0;
       }
       for (var i = inputsList.length - 1; i >= 0; i--) {
@@ -20,15 +20,20 @@ angular.module('formInputHelperApp')
         }
       }
     };
+
+    var buildTypeUrl = function(inputType) {
+      return '/#/inputs/' + inputType;
+    };
+
     // assign $scope.input
     var input = $scope.input = findInput(inputType);
-    $scope.nextInputType = findInput(inputType, 1);
-    $scope.prevInputType = findInput(inputType, -1);
 
+    // navigation links
+    var prevInputType = $scope.prevInputType = findInput(inputType, -1);
+    var nextInputType = $scope.nextInputType = findInput(inputType, 1);
+    $scope.prevInputTypeLink = buildTypeUrl(prevInputType.type);
+    $scope.nextInputTypeLink = buildTypeUrl(nextInputType.type);
 
-    // $scope.placeholder = $scope.input.attr.placeholder;
-
-    // $scope.input.attr.pattern = false;
 
     $scope.selectorType = 'input[type="' + inputType + '"]';
 
