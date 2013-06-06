@@ -411,7 +411,6 @@
       "booleanAttr": {
         "required": false,
         "disabled": false,
-        "readonly": false,
         "autofocus": false
       },
       "valueAttr": {
@@ -533,22 +532,6 @@
       }
     },
     {
-      "type": "image",
-      "desc": "Here",
-      "links": {
-        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
-        "codepen": "url"
-      },
-      "attr": {
-        "autofocus": false,
-        "border": true,
-        "align": true,
-        "value": true,
-        "readonly": false,
-        "name": true
-      }
-    },
-    {
       "type": "password",
       "desc": "Here",
       "booleanAttr": {
@@ -587,15 +570,18 @@
       "type": "number",
       "desc": "Here",
       "html5": true,
-      "attr": {
-        "placeholder": true,
-        "min": true,
-        "max": true,
-        "step": true,
-        "value": true,
-        "name": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
         "autofocus": false,
         "readonly": false
+      },
+      "valueAttr": {
+        "placeholder": "Number goes here",
+        "min": "0",
+        "max": "100",
+        "step": "1"
       },
       "links": {
         "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
