@@ -1,0 +1,12 @@
+.col {
+    padding: 1em;
+}
+
+#{$all-text-inputs} {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+label {
+    display: block;
+}

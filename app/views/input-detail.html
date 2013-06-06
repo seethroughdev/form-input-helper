@@ -1,29 +1,23 @@
 <div id="layout" class="pure-g-r">
-	<aside class="pure-u" ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></aside>
-	<div class="pure-u element-container">
+	<div class="pure-u-1-6 col" ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></div>
+	<div class="pure-u-2-3 col element-container">
 		<h1>Input: {{input.type}}</h1>
-
         <pre><code class="language-html">{{boundHTML}}</code></pre>
-
         <!-- Do not copy this source directly, it is compiled by Angular -->
         <div ng-if="{{input.attr.list}}" data-datalist data-input-object="{{input}}"></div>
-
         <form id="display-form" class="pure-form">
             <input data-input-helper data-input-object="{{input}}" binding-html="boundHTML">
-<!--             <input ng-if="input.type == 'radio' || input.type == 'checkbox'" data-input-helper data-input-object="{{input}}">
-            <input ng-if="input.type == 'radio' || input.type == 'checkbox'" data-input-helper data-input-object="{{input}}"> -->
             <input class="pure-button" type="submit" value="Submit">
         </form>
         <!-- Instead, use the box created on the page! -->
-
-
+    </div>
+    <div class="pure-u-1-6 col attribute-container">
         <form>
             <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
                 <label class="{{key}}" show-hover-info>{{key}}</label>
                 <input type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}">
             </div>
         </form>
-
         <form>
             <div ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
                 <label class="{{key}}" show-hover-info>
@@ -31,17 +25,12 @@
                 </label>
             </div>
         </form>
-
         <ul class="links">
             <li ng-repeat="(key, value) in input.links track by $id($index)"><a ng-href="{{input.links[key]}}">{{key}}</a></li>
         </ul>
-
         <div id="attribute-info-box">
-            
+
         </div>
-
-
-
-		<pre><code class="language-js">{{input|json}}</code></pre>
     </div>
 </div>
+<pre><code class="language-js">{{input|json}}</code></pre>
