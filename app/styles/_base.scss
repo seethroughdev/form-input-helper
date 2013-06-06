@@ -1,0 +1,34 @@
+#{$all-text-inputs} {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+label {
+    display: block;
+}
+
+.back, .left {
+    float: left;
+}
+
+.forward, .right {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
