@@ -257,14 +257,14 @@
         "required": false,
         "readonly": false,
         "disabled": false,
-        "autofocus": false
+        "autofocus": false,
+        "multiple": false
       },
       "links": {
         "w3.org": "http://www.w3.org/TR/html-markup/input.email.html",
         "codepen": "url"
       },
       "valueAttr": {
-        "multiple": "multiple",
         "maxlength": "20",
         "list": "email-list",
         "pattern": false,
