@@ -1,10 +1,9 @@
 <button class="btn" data-ng-click="slide='desc'">Description</button>
 <button class="btn" data-ng-click="slide='css'">CSS</button>
 <button class="btn" data-ng-click="slide='something'">Something Else</button>
-
+<hr>
 <div data-ng-switch="slide" data-ng-animate="'slide'" class="slide-frame">
-    <div data-ng-switch-when="desc">
-        {{input.desc}}
+    <div data-ng-switch-when="desc" ng-bind-html-unsafe="input.desc">
     </div>
     <div data-ng-switch-when="css">
         <div data-css-tip data-input-object="{{input}}"></div>
