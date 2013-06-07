@@ -229,7 +229,7 @@
   "inputTypes": [
     {
       "type": "text",
-      "desc": "Here",
+      "desc": "<p>This is your classic 'text input' field.  It's going to be your 'go-to' field for most non-specific data.</p>\n\n<p>Thanks to HTML5, we get useful attributes like 'placeholder' and 'maxlength' limits right in the field**   You can also add auto-suggest data by specifying the data-list id.  Or do a little custom html5 regex right in the input.**</p>\n\n<p>Some awesome new features to spice up an otherwise normal field.  Make sure to check your browser compatibility.  But there are polyfills for just about all if you don't feel like letting them gracefully fall back.</p>",
       "valueAttr": {
         "pattern": "[a-zA-Z0-9]+",
         "maxlength": "20",
