@@ -2,9 +2,11 @@
     padding: 1em;
 }
 
-.attributes-container {
+.valueAttr {
   label {
     margin-bottom: 1em;
+    color: #a7a7a7;
+    font-size: .9em;
   }
   input[type="text"] {
     width: 90%;
@@ -14,10 +16,6 @@
     margin-top: .8em;
     width: 5%;
   }
-}
-
-.element-container {
-
 }
 
 .slide-enter, .slide-leave {

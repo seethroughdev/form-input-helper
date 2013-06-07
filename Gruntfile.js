@@ -200,7 +200,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>',
-          src: ['*.html', 'views/*.html'],
+          src: ['*.html', 'views/*.html', 'views/partials/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -251,6 +251,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,txt}',
             '.htaccess',
+            'inputs.json',
             'components/**/*',
             'images/{,*/}*.{gif,webp}',
             'styles/fonts/*'
@@ -287,10 +288,10 @@ module.exports = function (grunt) {
     'coffee',
     'compass:dist',
     'useminPrepare',
+    'concat',
     'imagemin',
     'cssmin',
     'htmlmin',
-    'concat',
     'copy',
     'cdnify',
     'ngmin',
