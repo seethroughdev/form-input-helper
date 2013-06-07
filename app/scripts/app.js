@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('formInputHelperApp', [])
+angular.module('formInputHelperApp', ['ngSanitize'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/inputs/:inputType', {
