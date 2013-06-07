@@ -15,11 +15,14 @@ angular.module('formInputHelperApp')
       var log = $log.log; // quick log function
 
       // sort obj function from
-      var sortObj = function ( obj ) {
-        var key, tempArry = [], i, tempObj = {};
-        for ( key in obj ) { tempArry.push(key); }
+      var sortObj = function(obj) {
+        var key, tempArry = [],
+          i, tempObj = {};
+        for (key in obj) {
+          tempArry.push(key);
+        }
         tempArry.sort();
-        for ( i = 0; i < tempArry.length; i++ ) {
+        for (i = 0; i < tempArry.length; i++) {
           tempObj[tempArry[i]] = obj[tempArry[i]];
         }
         return tempObj;
@@ -36,13 +39,15 @@ angular.module('formInputHelperApp')
             boolAttr = obj.booleanAttr;
 
           // clean up element
-          element.removeAttr('data-input-object');
-          element.removeAttr('data-input-helper');
-          element.removeAttr('binding-html');
+          element
+            .removeAttr('data-input-object')
+            .removeAttr('data-input-helper')
+            .removeAttr('binding-html');
 
           // set field type
-          element.attr('type', obj.type);
-          element.attr('name', obj.type + '_identifier');
+          element
+            .attr('type', obj.type)
+            .attr('name', obj.type + '_id');
 
           // set valAttr to value
           for (key in valAttr) {
