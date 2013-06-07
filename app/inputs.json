@@ -410,11 +410,11 @@
       "desc": "Here",
       "booleanAttr": {
         "required": false,
+        "checked": false,
         "disabled": false,
         "autofocus": false
       },
       "valueAttr": {
-        "checked": "checked",
         "value": "Checkbox value"
       },
       "links": {
@@ -426,13 +426,13 @@
       "type": "radio",
       "desc": "Here",
       "booleanAttr": {
+        "checked": true,
         "required": false,
         "disabled": false,
         "readonly": false,
         "autofocus": false
       },
       "valueAttr": {
-        "checked": true,
         "value": "Radio button value"
       },
       "links": {
