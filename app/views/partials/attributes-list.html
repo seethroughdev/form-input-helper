@@ -1,9 +1,11 @@
 <h1>Attributes</h1>
 <form>
     <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
+        <div class="clearfix row">
+            <input class="back" type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}" >
+            <input class="back" type="checkbox" checked data-toggle-input value="{{input.valueAttr[key]}}">
+        </div>
         <label class="{{key}}" show-hover-info>{{key}}</label>
-        <input type="checkbox" checked data-toggle-input value="{{input.valueAttr[key]}}">
-        <input type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}" >
     </div>
     <div ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
         <label class="{{key}}" show-hover-info>

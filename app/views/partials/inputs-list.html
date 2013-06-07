@@ -1,11 +1,5 @@
-<div id="menu">
-  <div class="">
-    <a class="pure-menu-heading" href="/">Form Input</a>
-    <ul>
-      <li class="" ng-repeat="input in inputs" class="type-link {{input.type}}-link">
-          <a ng-href="/#/inputs/{{input.type}}">{{input.type}}</a>
-      </li>
-    </ul>
-  </div>
-</div>
-<!-- <pre><code>{{inputs|json}}</code></pre> -->
+<ul class="nav">
+  <li class="" ng-repeat="input in inputs" class="type-link {{input.type}}-link">
+      <a ng-href="/#/inputs/{{input.type}}">{{input.type}}</a>
+  </li>
+</ul>

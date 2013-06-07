@@ -2,6 +2,24 @@
     padding: 1em;
 }
 
+.attributes-container {
+  label {
+    margin-bottom: 1em;
+  }
+  input[type="text"] {
+    width: 90%;
+    margin-bottom: 0;
+  }
+  input[type="checkbox"] {
+    margin-top: .8em;
+    width: 5%;
+  }
+}
+
+.element-container {
+
+}
+
 .slide-enter, .slide-leave {
   -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
   -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
