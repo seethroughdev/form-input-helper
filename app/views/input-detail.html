@@ -1,66 +1,13 @@
-<div id="layout" class="pure-g-r">
-	<div class="pure-u-1-6 col" ng-include src="'views/inputs.html'" ng-controller="InputsCtrl"></div>
+<div class="clearfix header-nav" ng-include src="'views/partials/header-nav.html'"></div>
 
-    <div class="pure-u-1-4 col attribute-container">
-        <form>
-            <div ng-repeat="(key, value) in input.valueAttr track by $id($index)">
-                <label class="{{key}}" show-hover-info>{{key}}</label>
-                <input type="checkbox" checked data-toggle-input value="{{input.valueAttr[key]}}">
-                <input type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}" >
-            </div>
-            <div ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
-                <label class="{{key}}" show-hover-info>
-                    <input type="checkbox" ng-model="input.booleanAttr[key]">{{key}}
-                </label>
-            </div>
-        </form>
+<div class="code-module rendered-html">
+    <pre><code class="language-html">{{boundHTML}}</code></pre>
+</div>
 
-        <div class="style-selector">
-            {{styleSelector}}
-        </div>
+<div class="input-field" ng-include src="'views/partials/input.html'"></div>
 
-        <ul class="links">
-            <li ng-repeat="(key, value) in input.links track by $id($index)"><a ng-href="{{input.links[key]}}">{{key}}</a></li>
-        </ul>
-        <div id="attribute-info-box">
+<div class="tab-module" ng-include src="'views/partials/extra-info.html'"></div>
 
-        </div>
-    </div>
-
-    <div class="pure-u-7-12 col element-container">
-
-        <div class="clearfix">
-    		<h1 class="back">Input: {{input.type}}</h1>
-            <a ng-if="nextInputType" ng-href="{{nextInputTypeLink}}" class="forward">{{nextInputType.type}} input</a>
-            <span ng-if="nextInputType && prevInputType" class="forward link-divider"> | </span>
-            <a ng-if="prevInputType" ng-href="{{prevInputTypeLink}}" class="forward">{{prevInputType.type}} input</a>
-        </div>
-
-        <pre><code class="language-html">{{boundHTML}}</code></pre>
-        <!-- Do not copy this source directly, it is compiled by Angular -->
-        <div ng-if="{{input.attr.list}}" data-datalist data-input-object="{{input}}"></div>
-        <form id="display-form">
-            <input data-input-helper data-input-object="{{input}}" binding-html="boundHTML">
-            <input class="" type="submit" value="Submit">
-        </form>
-        <br/><br/>
-        <!-- Instead, use the box created on the page! -->
-        <button class="btn" data-ng-click="slide='desc'">Description</button>
-        <button class="btn" data-ng-click="slide='css'">CSS</button>
-        <button class="btn" data-ng-click="slide='something'">Something Else</button>
-        <div data-ng-switch="slide" data-ng-animate="'slide'" class="slide-frame">
-            <div data-ng-switch-when="desc">
-                {{input.desc}}
-            </div>
-            <div data-ng-switch-when="css">
-                <css-tip data-input-object="{{input}}"></css-tip>
-            </div>
-            <div data-ng-switch-when="something">
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, debitis voluptas vitae perferendis fugiat iste eius inventore repudiandae odio hic temporibus ducimus asperiores quas repellendus adipisci nisi quod reiciendis rem.</div>
-            </div>
-        </div>
-        <pre><code class="language-js">{{input|json}}</code></pre>
-
-    </div>
-
+<div class="debug">
+    <pre><code class="language-js">{{input|json}}</code></pre>
 </div>

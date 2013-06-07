@@ -3,12 +3,8 @@
 angular.module('formInputHelperApp', [])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/inputs', {
-        templateUrl: 'views/inputs.html',
-        controller: 'InputsCtrl'
-      })
       .when('/inputs/:inputType', {
-        templateUrl: 'views/input-detail.html',
+        templateUrl: 'views/layout.html',
         controller: 'InputDetailCtrl'
       })
       .otherwise({

@@ -1,0 +1,4 @@
+<h1 class="back">Input: {{input.type}}</h1>
+<a ng-if="nextInputType" ng-href="{{nextInputTypeLink}}" class="forward">{{nextInputType.type}} input</a>
+<span ng-if="nextInputType && prevInputType" class="forward link-divider"> | </span>
+<a ng-if="prevInputType" ng-href="{{prevInputTypeLink}}" class="forward">{{prevInputType.type}} input</a>
