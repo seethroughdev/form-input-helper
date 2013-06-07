@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .factory('inputService', function ($http, $log) {
+  .factory('inputService', function ($http) {
 
     var url = 'inputs.json';
 

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .controller('InputDetailCtrl', function($scope, inputService, $routeParams, $log, $location) {
+  .controller('InputDetailCtrl', function($scope, inputService, $routeParams, $log) {
 
   var log = $log.log;
 
@@ -20,7 +20,7 @@ angular.module('formInputHelperApp')
       }
       for (var i = inputsList.length - 1; i >= 0; i--) {
         if (inputsList[i].type === val) {
-          return inputsList[i+offset];
+          return inputsList[i + offset];
         }
       }
     };

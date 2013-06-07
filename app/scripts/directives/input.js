@@ -10,7 +10,7 @@ angular.module('formInputHelperApp')
       inputObject: '@',
       bindingHtml: '=bindingHtml'
     },
-    link: function(scope, element, attrs) {
+    link: function(scope, element) {
 
       var log = $log.log; // quick log function
 

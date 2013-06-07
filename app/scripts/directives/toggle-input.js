@@ -5,6 +5,8 @@ angular.module('formInputHelperApp')
 
   var log = $log.log;
 
+  log('toggle-input ran');
+
 
 
   return {
@@ -12,7 +14,7 @@ angular.module('formInputHelperApp')
     scope: {
       value: '@'
     },
-    link: function postLink(scope, element, attrs) {
+    link: function postLink(scope, element) {
 
       var inputField = element.next();
       element.bind('change', function() {

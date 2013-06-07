@@ -5,9 +5,6 @@ angular.module('formInputHelperApp')
     return {
       templateUrl: 'views/partials/datalist.html',
       restrict: 'A',
-      replace: true,
-      link: function postLink(scope, element, attrs) {
-        console.log('dave');
-      }
+      replace: true
     };
   });
