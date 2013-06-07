@@ -5,9 +5,10 @@
 </div>
 
 <div ng-if="{{input.attr.list}}" data-datalist data-input-object="{{input}}"></div>
+
 <form id="display-form">
-    <input data-input-helper data-input-object="{{input}}" ng-bind-html-unsafe="boundHTML" binding-html="boundHTML">
-    <input class="" type="submit" value="Submit">
+    <input data-input-helper data-input-object="{{input}}" binding-html="boundHTML">
+    <input type="submit" class="btn" value="Submit">
 </form>
 
 <!-- Instead, use the box created on the page! -->
