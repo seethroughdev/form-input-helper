@@ -7,6 +7,7 @@ angular.module('formInputHelperApp')
       restrict: 'A',
       replace: true,
       link: function postLink(scope, element, attrs) {
+        console.log('dave');
       }
     };
   });
