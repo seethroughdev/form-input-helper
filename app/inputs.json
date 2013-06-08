@@ -416,9 +416,7 @@
       },
       "valueAttr": {
         "min": "2001-01-01",
-        "max": "2010-12-31",
-        "step": "1",
-        "list": "list-choices"
+        "max": "2010-12-31"
       },
       "links": {
         "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
@@ -445,8 +443,8 @@
         "readonly": false
       },
       "valueAttr": {
-        "min": "2001-01-01",
-        "max": "2010-12-31",
+        "min": "1999-04-12T16:20:50",
+        "max": "2020-12-31T16:20:50",
         "step": "1",
         "list": "list-choices"
       },
@@ -475,10 +473,8 @@
         "readonly": false
       },
       "valueAttr": {
-        "min": "2001-01-01",
-        "max": "2010-12-31",
-        "step": "1",
-        "list": "list-choices"
+        "min": "1994-05",
+        "max": "2024-08"
       },
       "links": {
         "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
@@ -505,10 +501,8 @@
         "readonly": false
       },
       "valueAttr": {
-        "min": "2001-01-01",
-        "max": "2010-12-31",
-        "step": "1",
-        "list": "list-choices"
+        "min": "04:19",
+        "max": "16:21"
       },
       "links": {
         "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
@@ -535,10 +529,8 @@
         "readonly": false
       },
       "valueAttr": {
-        "min": "2001-01-01",
-        "max": "2010-12-31",
-        "step": "1",
-        "list": "list-choices"
+        "min": "1986-W37",
+        "max": "2016-W51"
       },
       "links": {
         "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
