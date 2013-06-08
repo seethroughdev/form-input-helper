@@ -363,7 +363,7 @@
         "autofocus": false
       },
       "type": "range",
-      "desc": "Here",
+      "desc": "<p>The range input is one of the new html5 inputs.  And as you can see, its clearly unique.  It was intended as a way to let a user give an estimated number value.  While you can explicitly set the minimum, maximum and steps.</p>\n\n<p>Why is the users value estimated?  Well.  Besides it not being an ideal tool for selecting exact numbers, it actually doesn't natively give you the opportunity to show a value!</p>\n\n<p>There are some clever javascript implementations on the web though. </p>\n\n<p>The range input field falls back to a standard input field for non-modern browsers.</p>",
       "html5": true,
       "links": {
         "w3.org": "http://www.w3.org/TR/html-markup/input.range.html",
