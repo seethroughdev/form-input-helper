@@ -1,6 +1,6 @@
 <button class="btn" data-ng-click="slide='desc'">Description</button>
 <button class="btn" data-ng-click="slide='css'">CSS</button>
-<button class="btn" data-ng-click="slide='something'">Something Else</button>
+<button class="btn" data-ng-click="slide='attributes'">Attributes</button>
 <hr>
 <div data-ng-switch="slide" data-ng-animate="'slide'" class="slide-frame">
     <div data-ng-switch-when="desc" ng-bind-html-unsafe="input.desc">
@@ -8,7 +8,7 @@
     <div data-ng-switch-when="css">
         <div data-css-tip data-input-object="{{input}}"></div>
     </div>
-    <div data-ng-switch-when="something">
+    <div data-ng-switch-when="attributes">
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, debitis voluptas vitae perferendis fugiat iste eius inventore repudiandae odio hic temporibus ducimus asperiores quas repellendus adipisci nisi quod reiciendis rem.</div>
     </div>
 </div>
