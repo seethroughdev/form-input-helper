@@ -1,13 +1,12 @@
 'use strict';
 
-angular.module('formInputHelperApp').directive('selectBox', function($log) {
-  var log = $log.log;
+angular.module('formInputHelperApp').directive('selectBox', function() {
 
   return {
     template: '<select></select>',
     replace: true,
     restrict: 'A',
-    link: function postLink(scope, element, attrs) {
+    link: function postLink(scope, element) {
       if (scope.input.type !== 'date') {
         return;
       } else {
