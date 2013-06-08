@@ -1,5 +1,6 @@
 <h1>Attributes</h1>
 <form>
+    <!-- <div ng-if="input.formats" data-select-box data-obj="{{input}}">{{input}}</div> -->
     <div class="valueAttr" ng-repeat="(key, value) in input.valueAttr track by $id($index)">
         <div class="clearfix row">
             <input class="back" type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}" >

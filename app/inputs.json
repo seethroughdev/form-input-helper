@@ -388,6 +388,154 @@
       },
       "valueAttr": {
         "min": "2001-01-01",
+        "max": "2010-12-31"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ]
+    },
+    {
+      "type": "datetime",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "min": "2001-01-01",
+        "max": "2010-12-31",
+        "step": "1",
+        "list": "list-choices"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ]
+    },
+    {
+      "type": "datetime-local",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "min": "2001-01-01",
+        "max": "2010-12-31",
+        "step": "1",
+        "list": "list-choices"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ]
+    },
+    {
+      "type": "month",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "min": "2001-01-01",
+        "max": "2010-12-31",
+        "step": "1",
+        "list": "list-choices"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ]
+    },
+    {
+      "type": "time",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "min": "2001-01-01",
+        "max": "2010-12-31",
+        "step": "1",
+        "list": "list-choices"
+      },
+      "links": {
+        "w3.org": "http://www.w3.org/TR/html-markup/input.file.html",
+        "codepen": "url"
+      },
+      "formats": [
+        "date",
+        "datetime",
+        "datetime-local",
+        "month",
+        "week",
+        "time"
+      ]
+    },
+    {
+      "type": "week",
+      "desc": "Here",
+      "html5": true,
+      "booleanAttr": {
+        "autocomplete": false,
+        "required": false,
+        "disabled": false,
+        "autofocus": false,
+        "readonly": false
+      },
+      "valueAttr": {
+        "min": "2001-01-01",
         "max": "2010-12-31",
         "step": "1",
         "list": "list-choices"
