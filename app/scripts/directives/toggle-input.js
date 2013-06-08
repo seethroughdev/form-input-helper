@@ -1,13 +1,7 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .directive('toggleInput', function($log) {
-
-  var log = $log.log;
-
-  log('toggle-input ran');
-
-
+  .directive('toggleInput', function() {
 
   return {
     restrict: 'A',
@@ -15,15 +9,17 @@ angular.module('formInputHelperApp')
       value: '@'
     },
     link: function postLink(scope, element) {
+      var inputField = element.prev();
 
-      var inputField = element.next();
       element.bind('change', function() {
         if (element.prop('checked')) {
-          inputField.removeAttr('disabled');
-          inputField[0].value = scope.value;
+          inputField
+            .val(scope.value)
+            .removeAttr('disabled');
         } else {
-          inputField.attr('disabled', 'disabled');
-          inputField[0].value = '';
+          inputField
+            .val('')
+            .attr('disabled', 'disabled');
         }
       });
 
