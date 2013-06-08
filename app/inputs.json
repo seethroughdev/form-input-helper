@@ -251,7 +251,7 @@
     },
     {
       "type": "email",
-      "desc": "Here",
+      "desc": "<p>The email type input is the perfect place to put any email fields in your form.  It looks just like the text field.  But gives you a built in pattern match.</p>  \n\n<p>Go ahead and play with the text in here.  If you're on a modern browser you should see the field outlined in red (meaning invalid) until you enter a pattern that matches.</p>\n\n<p>As you do, you'll see its pretty vague.  That's intentional, as there is a pretty wide range of what is actually acceptable as an email address.</p>\n\n<p>Like all these fields, remember that not all browsers will support that pattern filter.  And you should still consider some other type of front-end validation polyfill.  And of course, server-side validation is still a must on all accounts.</p>\n\n<p>Another great perk of fields like this, is you'll get custom keyboard layouts on the mobile devices that support it.  Like the @ symbol right where you need it.</p>",
       "html5": true,
       "booleanAttr": {
         "required": false,
@@ -273,7 +273,7 @@
     },
     {
       "type": "search",
-      "desc": "Here",
+      "desc": "<p>Another new field in the HTML5 arsenal.  The search field gives you some subtle advantages depending on browser.  And of course, falls back to a plain text field in the older browsers.</p>\n\n<p>The main things to note are that in some browsers like Safari, you will get an search icon and even a button to clear the value.  Others will vary with their own interpretations.</p>\n\n<p>Some people feel the field should look just like the others, and you'll notice that libraries like normalize/css will bring them right back to their text type counterparts.  Browsers like webkit and even ie10 give you specific selectors to style your search fields.</p>\n\n<p>This input gives you the same access to html5 attributes that the other text-siblings do.  patterns, length limits, and placeholders.  </p>",
       "html5": true,
       "booleanAttr": {
         "autocomplete": false,
@@ -295,7 +295,7 @@
     },
     {
       "type": "url",
-      "desc": "Here",
+      "desc": "<p>The html5 url type field is another of the <em>text-type siblings</em> (as I like to call them).  Looks just like the others when unstyled.  But gives you another pattern matching attribute to help validate that your input is actually a URL.</p>\n\n<p>This is another field I'd encourage playing with on a modern browser.  Just like the email field.  The pattern matching is intentionally, still pretty vague.</p>\n\n<p>Just like the other text-types, you get those great html5 attributes.  And custom mobile keyboards.  Just keep an eye out for the browsers, and consider polyfills for any feature that is required.</p>\n\n<p>Another usability pointer I've run into is that this field will not validate without a protocol like <em>http</em> in it.  Not all users know to type that.  Something to consider with this field type.</p>",
       "html5": true,
       "booleanAttr": {
         "autocomplete": false,
@@ -318,7 +318,7 @@
     },
     {
       "type": "tel",
-      "desc": "Here",
+      "desc": "<p>The html5 telephone input type is a field that is definitely mobile friendly.</p>\n\n<p>Mobile devices that have customizable keyboards will actually pop up the phone keyboard rather than a standard text keyboard.  This obviously has huge advantages in terms of UX..</p>\n\n<p>But as your playing with it you might notice.  Wait, I can put letters and symbols and all kinds of things in here.  .</p>\n\n<p>Yeah.  The telephone input type actually doesn't do any pattern filtering of its own.  But like the other text-type siblings.  You can add the pattern attribute.  And modern browsers will be able to help you out there.  .</p>\n\n<p>But fair warning, like some other data types.  Phone numbers can present UX problems with users.  That's why I always rely on strict server-side validation along with anything on the front-end..</p>",
       "html5": true,
       "booleanAttr": {
         "autocomplete": false,
