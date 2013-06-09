@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .directive('toggleInput', function() {
+  .directive('toggleInput', function($rootScope) {
 
   return {
     restrict: 'A',
@@ -18,8 +18,13 @@ angular.module('formInputHelperApp')
         if (element.prop('checked')) {
           element.attr('checked', 'checked');
           inputField
-            .val(scope.value)
-            .removeAttr('disabled');
+            .removeAttr('disabled')
+            .focus()
+            .val(scope.value);
+
+          // testing with broadcast to fire that $watch event -al
+          $rootScope.$broadcast('cattt', [1,2,3]);
+
         } else {
           element.removeAttr('checked');
           inputField

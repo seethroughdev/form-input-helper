@@ -28,6 +28,7 @@ angular.module('formInputHelperApp')
         return tempObj;
       };
 
+
       // Watch since resource is async
       scope.$watch('inputObject', function(inputObject) {
         var key;
@@ -43,6 +44,10 @@ angular.module('formInputHelperApp')
           while( i-- ){
             element[0].removeAttributeNode(attributes[i]);
           }
+
+          scope.$on('cattt', function() {
+            // added a dummy $on watch for later.
+          })
 
           // set field type
           element
