@@ -53,9 +53,8 @@ angular.module('formInputHelperApp')
     };
 
     // create navigation links
-    var prevInputType = $scope.prevInputType = findInput($routeParams.inputType, -1);
-    var nextInputType = $scope.nextInputType = findInput($routeParams.inputType, 1);
-
+    $scope.prevInputType = findInput($routeParams.inputType, -1);
+    $scope.nextInputType = findInput($routeParams.inputType, 1);
 
     return;
   });
