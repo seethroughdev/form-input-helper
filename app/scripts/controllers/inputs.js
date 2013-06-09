@@ -1,19 +1,12 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .controller('InputsCtrl', function($scope, inputService, $routeParams, $log, $location, $route) {
+  .controller('InputsCtrl', function($scope, inputService, $routeParams, $log, $location, $route, resetInputs) {
 
   // quick function for logging
   // var log = $log.log;
 
-  var resetInputs = function() {
-    var inputs = $('input');
-    inputs.each(function(index) {
-      $(this).val('')
-    });
-  };
 
-  resetInputs();
 
   // get inputType from URL
   var inputType = $scope.inputType = $routeParams.inputType;
@@ -55,7 +48,7 @@ angular.module('formInputHelperApp')
       $scope.prevInputType = findInput(inputType, -1);
       $scope.nextInputType = findInput(inputType, 1);
 
-      resetInputs();
+      resetInputs.resetInputs();
 
     };
 
@@ -66,5 +59,7 @@ angular.module('formInputHelperApp')
 
     return;
   });
+
+  resetInputs.resetInputs();
 
 });
