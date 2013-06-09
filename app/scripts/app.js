@@ -5,7 +5,7 @@ angular.module('formInputHelperApp', ['ngSanitize'])
     $routeProvider
       .when('/inputs/:inputType', {
         templateUrl: 'views/layout.html',
-        controller: 'InputDetailCtrl'
+        controller: 'InputsCtrl'
       })
       .otherwise({
         redirectTo: '/inputs/text'

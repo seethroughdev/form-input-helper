@@ -1,11 +1,72 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .controller('InputsCtrl', function($scope, inputService) {
+  .controller('InputsCtrl', function($scope, inputService, $routeParams, $log, $location, $route) {
+
+  // quick function for logging
+  var log = $log.log;
+
+
+  // get inputType from URL
+  var inputType = $scope.inputType = $routeParams.inputType;
+
+  var buildTypeUrl = function(inputType) {
+    return '/#/inputs/' + inputType;
+  }
+
+  // get data
   inputService.getInputs().then(function(d) {
-    $scope.inputs = d.inputTypes;
 
-    $scope.size = 30;
+    var inputsList = $scope.inputsList = d.inputTypes;
 
+    // iterate through input types based on $routeParam
+    var findInput = function(val, offset) {
+      if (!offset || !angular.isNumber(offset)) {
+        offset = 0;
+      }
+      for (var i = inputsList.length - 1; i >= 0; i--) {
+        if (inputsList[i].type === val) {
+          return inputsList[i + offset];
+        }
+      }
+    };
+
+    // assign $scope.input
+    $scope.input = findInput(inputType);
+
+    $scope.changeInput = function(inputType, offset) {
+
+      // hack to prevent reload of page when changing $location.path()
+      // http://stackoverflow.com/questions/12422611/angularjs-paging-with-location-path-but-no-ngview-reload
+      var lastRoute = $route.current;
+      $scope.$on('$locationChangeSuccess', function(event) {
+          $route.current = lastRoute;
+      });
+
+      inputType = inputType || $routeParams.inputType;
+      $scope.input = findInput(inputType, offset);
+      $location.path('/inputs/' + inputType);
+
+      // setting prev/next buttons
+      $scope.prevInputType = findInput(inputType,-1);
+      $scope.nextInputType = findInput(inputType,1);
+
+      // if (prevInputType) {
+      //   $scope.prevInputTypeLink = buildTypeUrl(prevInputType.type);
+      // }
+
+      // if (nextInputType) {
+      //   $scope.nextInputTypeLink = buildTypeUrl(nextInputType.type);
+      // }
+
+    };
+
+    // create navigation links
+    var prevInputType = $scope.prevInputType = findInput($routeParams.inputType,-1);
+    var nextInputType = $scope.nextInputType = findInput($routeParams.inputType,1);
+
+
+    return;
   });
+
 });
