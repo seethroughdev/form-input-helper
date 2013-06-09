@@ -8,8 +8,8 @@
         </div>
         <label class="{{key}}" show-hover-info>{{key}}</label>
     </div>
-    <div class="booleanAttr" ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
-        <label class="{{key}}" show-hover-info>
+    <div class="booleanAttr clearfix row">
+        <label class="{{key}} grid-3" show-hover-info ng-repeat="(key, value) in input.booleanAttr track by $id($index)">
             <input type="checkbox" ng-model="input.booleanAttr[key]">{{key}}
         </label>
     </div>
@@ -18,6 +18,8 @@
 <div class="style-selector">
     {{styleSelector}}
 </div>
+
+<hr>
 
 <ul class="links">
     <li ng-repeat="(key, value) in input.links track by $id($index)"><a ng-href="{{input.links[key]}}">{{key}}</a></li>

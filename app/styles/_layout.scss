@@ -2,6 +2,7 @@
     @include box-sizing(border-box);
 }
 
-.col:nth-of-type(odd) {
-    // background: #e7e7e7;
+.container {
+    max-width: 65em;
+    width: 88%;
 }
