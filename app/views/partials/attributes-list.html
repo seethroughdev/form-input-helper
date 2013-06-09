@@ -3,8 +3,8 @@
     <!-- <div ng-if="input.formats" data-select-box data-obj="{{input}}">{{input}}</div> -->
     <div class="valueAttr" ng-repeat="(key, value) in input.valueAttr track by $id($index)">
         <div class="clearfix row">
-            <input class="back" type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}" disabled="disabled">
-            <input class="back" type="checkbox" data-toggle-input value="{{input.valueAttr[key]}}">
+            <input class="back " type="text" ng-model="input.valueAttr[key]" placeholder="{{key}}" disabled="disabled">
+            <input class="back" type="checkbox" data-toggle-input data-key="{{key}}" value="{{input.valueAttr[key]}}">
         </div>
         <label class="{{key}}" show-hover-info>{{key}}</label>
     </div>
