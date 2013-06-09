@@ -30,7 +30,6 @@ angular.module('formInputHelperApp')
 
       // Watch since resource is async
       scope.$watch('inputObject', function(inputObject) {
-
         var key;
 
         if (inputObject) {
@@ -39,10 +38,11 @@ angular.module('formInputHelperApp')
             boolAttr = obj.booleanAttr;
 
           // clean up element
-          element
-            .removeAttr('data-input-object')
-            .removeAttr('data-input-helper')
-            .removeAttr('binding-html');
+          var attributes = element[0].attributes;
+          var i = attributes.length;
+          while( i-- ){
+            element[0].removeAttributeNode(attributes[i]);
+          }
 
           // set field type
           element
@@ -78,8 +78,6 @@ angular.module('formInputHelperApp')
             element.parent()
               .append('This is a ' + obj.type + '.');
           }
-
-          // log(element);
 
           // passing rendered html to codebox
           scope.bindingHtml = element[0].outerHTML;
