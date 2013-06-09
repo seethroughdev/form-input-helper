@@ -18,7 +18,7 @@ angular.module('formInputHelperApp')
             .removeAttr('disabled');
         } else {
           inputField
-            .val('')
+            // .val('')
             .attr('disabled', 'disabled');
         }
       });
