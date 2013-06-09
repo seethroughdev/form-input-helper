@@ -5,7 +5,7 @@ angular.module('formInputHelperApp')
 
     var reset = {
       resetInputs: function() {
-        var inputs = $('input').not('[type="submit"]');
+        var inputs = $('input', '#display-form').not('[type="submit"]');
         inputs.each(function() {
           $(this).val('');
         });
