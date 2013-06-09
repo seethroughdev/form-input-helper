@@ -52,9 +52,9 @@ angular.module('formInputHelperApp')
           // set valAttr to value
           for (key in valAttr) {
             if (valAttr.hasOwnProperty(key)) {
-              if (valAttr[key] && valAttr[key].length > 0
-                && $('.' + key + '-checker').prop('checked')) {
-                  element.attr(key, valAttr[key]);
+              if (valAttr[key] && valAttr[key].length > 0 &&
+                $('.' + key + '-checker').prop('checked')) {
+                element.attr(key, valAttr[key]);
               } else {
                 element.removeAttr(key);
               }

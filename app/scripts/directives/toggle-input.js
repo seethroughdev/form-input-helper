@@ -14,8 +14,6 @@ angular.module('formInputHelperApp')
 
       element.addClass(scope.key + '-checker');
 
-
-
       element.bind('change', function() {
         if (element.prop('checked')) {
           element.attr('checked', 'checked');
@@ -23,10 +21,10 @@ angular.module('formInputHelperApp')
             .val(scope.value)
             .removeAttr('disabled');
         } else {
+          element.removeAttr('checked');
           inputField
             // .val('')
             .attr('disabled', 'disabled');
-          element.removeAttr('checked');
         }
       });
 
