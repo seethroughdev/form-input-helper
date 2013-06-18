@@ -8,7 +8,7 @@ angular.module('formInputHelperApp')
   // var log = $log.log;
 
   // setting switch to test routehack
-  var routeHack = true;
+  var routeHack = false;
 
   // get inputType from URL
   var inputType = $scope.inputType = $routeParams.inputType;
