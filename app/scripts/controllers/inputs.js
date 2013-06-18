@@ -3,17 +3,23 @@
 angular.module('formInputHelperApp')
   .controller('InputsCtrl', function($scope, inputService, $routeParams, $log, $location, $route, resetInputs) {
 
-  // quick function for logging
-  // var log = $log.log;
-
-
-
   // get inputType from URL
   var inputType = $scope.inputType = $routeParams.inputType;
 
+  var init = function() {
+    resetInputs.resetInputs();
+    setActiveLink(inputType);
+  };
+
+  // yes, dom manipulation in controllers is bad!  Need to move...
+  var setActiveLink = function(type) {
+    var inputTypeLink = '.' + type + '-link';
+    $('.type-link a').removeClass('is-active');
+    $(inputTypeLink).find('a').addClass('is-active');
+  };
+
   // get data
   inputService.getInputs().then(function(d) {
-
     var inputsList = $scope.inputsList = d.inputTypes;
 
     // iterate through input types based on $routeParam
@@ -32,7 +38,6 @@ angular.module('formInputHelperApp')
     $scope.input = findInput(inputType);
 
     $scope.changeInput = function(inputType, offset) {
-
       // hack to prevent reload of page when changing $location.path()
       // http://stackoverflow.com/questions/12422611/angularjs-paging-with-location-path-but-no-ngview-reload
       var lastRoute = $route.current;
@@ -48,8 +53,8 @@ angular.module('formInputHelperApp')
       $scope.prevInputType = findInput(inputType, -1);
       $scope.nextInputType = findInput(inputType, 1);
 
+      setActiveLink(inputType);
       resetInputs.resetInputs();
-
     };
 
     // create navigation links
@@ -59,6 +64,6 @@ angular.module('formInputHelperApp')
     return;
   });
 
-  resetInputs.resetInputs();
+  init();
 
 });
