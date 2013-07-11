@@ -3,7 +3,7 @@
 angular.module('formInputHelperApp')
   .factory('inputService', function ($http) {
 
-    var url = 'inputs.json';
+    var url = 'data/inputs.json';
 
     var getInputs = {
       getInputs: function() {
