@@ -3,6 +3,13 @@
 angular.module('formInputHelperApp')
   .controller('InputsCtrl', function($scope, inputService, $routeParams, $log, $location, $route, resetInputs) {
 
+
+  // quick function for logging
+  // var log = $log.log;
+
+  // setting switch to test routehack
+  var routeHack = false;
+
   // get inputType from URL
   var inputType = $scope.inputType = $routeParams.inputType;
 
@@ -40,10 +47,14 @@ angular.module('formInputHelperApp')
     $scope.changeInput = function(inputType, offset) {
       // hack to prevent reload of page when changing $location.path()
       // http://stackoverflow.com/questions/12422611/angularjs-paging-with-location-path-but-no-ngview-reload
-      // var lastRoute = $route.current;
-      // $scope.$on('$locationChangeSuccess', function() {
-      //   $route.current = lastRoute;
-      // });
+
+      if (routeHack) {
+        var lastRoute = $route.current;
+        $scope.$on('$locationChangeSuccess', function() {
+          $route.current = lastRoute;
+        });
+      }
+
 
       inputType = inputType || $routeParams.inputType;
       $scope.input = findInput(inputType, offset);
