@@ -1,9 +1,16 @@
-// @import "compass_twitter_bootstrap";
+// mixin library
 @import "../components/bourbon/app/assets/stylesheets/_bourbon";
 
-@import "_colors";
-@import "_base";
-@import "_layout";
-@import "_typography";
-@import "_modules";
+// vars
+@import "global/_vars";
+
+// global
+@import "global/_base";
+@import "global/_layout";
+@import "global/_typography";
+@import "global/_state";
+
+// modules
+@import "global/_modules";
+@import "global/_buttons";
 
