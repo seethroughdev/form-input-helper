@@ -2,7 +2,7 @@
 @import "../components/bourbon/app/assets/stylesheets/_bourbon";
 
 // vars
-@import "global/_vars";
+@import "_vars";
 
 // global
 @import "global/_base";
@@ -13,4 +13,5 @@
 // modules
 @import "global/_modules";
 @import "global/_buttons";
+@import "partials/_header-nav"
 
