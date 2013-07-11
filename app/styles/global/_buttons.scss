@@ -2,7 +2,6 @@
   background: $blue;
   @include transition(background 500ms linear);
   border: 0;
-  font-weight: bold;
   font-size: 1em;
   &:hover {
     background: darken($blue, 10%)
