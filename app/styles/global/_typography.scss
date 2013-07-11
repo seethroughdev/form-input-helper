@@ -1,0 +1,18 @@
+html {
+  font-size: 1.15em;
+  line-height: 2.2em;
+  font-family: $sans-font;
+}
+
+a.is-active {
+  color: purple;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+pre code {
+  font-size: 1em;
+}

@@ -2,6 +2,10 @@
     @include box-sizing(border-box);
 }
 
+body {
+  background: $grey;
+}
+
 .container {
     padding-top: 1.5em;
     max-width: 65em;

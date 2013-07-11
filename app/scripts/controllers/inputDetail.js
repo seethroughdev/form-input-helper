@@ -9,8 +9,6 @@ angular.module('formInputHelperApp')
     log('it changed');
   };
 
-  // $scope.selectorType = 'input[type="' + inputType + '"]';
-
   // set default slide to description
   $scope.slide = 'desc';
 
