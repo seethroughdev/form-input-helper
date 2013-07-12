@@ -1,10 +1,3 @@
-body {
-  font-size: 1.15em;
-  line-height: 2.2em;
-  font-family: $sans-font;
-  color: $black;
-}
-
 #{$all-text-inputs} {
     // width: 100%;
     margin-bottom: .5em;
@@ -35,30 +28,4 @@ input[readonly], input:disabled {
     &:focus {
         box-shadow: none;
     }
-}
-
-label {
-    display: block;
-}
-
-pre {
-    border: 0;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-    *zoom: 1;
 }

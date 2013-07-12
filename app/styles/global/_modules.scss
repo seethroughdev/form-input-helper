@@ -72,3 +72,13 @@ pre {
 .link-divider {
   margin: 0 .5em;
 }
+
+.tab-module {
+  .btn {
+    background: $pink;
+    color: white;
+    &:hover {
+      background: darken($pink, 5%);
+    }
+  }
+}
