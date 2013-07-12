@@ -25,3 +25,8 @@ pre code {
 hr {
   margin: 1em auto;
 }
+
+span[class^="icon"] {
+  font-size: .7em;
+  color: darken($grey, 20%);
+}
