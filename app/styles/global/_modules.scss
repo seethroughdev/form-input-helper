@@ -2,6 +2,7 @@ pre {
   background: white;
   border: 1px solid darken($grey, 10%);
   padding: 1em;
+  word-break: break-word;
 }
 
 .valueAttr {

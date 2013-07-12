@@ -11,3 +11,9 @@ body {
     max-width: 65em;
     width: 88%;
 }
+
+.attributes-container {
+  padding: 0 0 0 1.5em;
+  border-left: 1px solid darken($grey, 5%);
+  box-shadow: -2px 1px 1px 0px #fcfcfc;
+}
