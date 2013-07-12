@@ -1,0 +1,42 @@
+.nav-wrap {
+  // background: darken($grey, 4%);
+  border-radius: $round;
+  padding: .5em;
+  font-size: .9em;
+
+  li {
+    color: lighten($black, 30%);
+
+    &:after {
+      content: '•';
+      padding-left: 1em;
+    }
+    &:last-of-type:after {
+      content: '';
+    }
+  }
+  a {
+    &:hover {
+      color: $black;
+      text-decoration: none;
+    }
+    &.is-active {
+      color: $black;
+      font-weight: bold;
+    }
+  }
+
+}
+
+.input-nav {
+  text-transform: capitalize;
+}
+
+.input-select-box {
+  text-align: left;
+}
+
+.credit-box {
+  text-align: right;
+  color: $green;
+}

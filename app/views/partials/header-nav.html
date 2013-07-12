@@ -1,10 +1,12 @@
-<h1 class="back">Input: {{input.type}}</h1>
-<a ng-if="nextInputType" ng-click="changeInput(nextInputType.type)"
-                    ng-href="/#/inputs/{{nextInputType.type}}" class="forward">
-  {{nextInputType.type}} input
-</a>
-<span ng-if="nextInputType && prevInputType" class="forward link-divider"> | </span>
-<a ng-if="prevInputType" ng-click="changeInput(prevInputType.type)"
-                    ng-href="/#/inputs/{{prevInputType.type}}" class="forward">
-  {{prevInputType.type}} input
-</a>
+<h3 class="back">Input: {{input.type}}</h3>
+<div class="navigation forward">
+  <a ng-if="nextInputType" ng-click="changeInput(nextInputType.type)"
+                      ng-href="/#/inputs/{{nextInputType.type}}" class="forward">
+    {{nextInputType.type}} input
+  </a>
+  <span ng-if="nextInputType && prevInputType" class="forward link-divider"> | </span>
+  <a ng-if="prevInputType" ng-click="changeInput(prevInputType.type)"
+                      ng-href="/#/inputs/{{prevInputType.type}}" class="forward">
+    {{prevInputType.type}} input
+  </a>
+</div>
