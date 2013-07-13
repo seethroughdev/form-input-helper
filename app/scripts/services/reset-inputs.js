@@ -1,7 +1,11 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .factory('resetInputs', function () {
+  .factory('resetInputs', function ($) {
+
+    // reassign to remove lint error
+    $ = window.jQuery;
+
 
     var reset = {
       resetInputs: function() {

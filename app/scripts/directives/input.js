@@ -10,9 +10,13 @@ angular.module('formInputHelperApp')
       inputObject: '@',
       bindingHtml: '=bindingHtml'
     },
-    link: function(scope, element) {
+    link: function(scope, element, $) {
 
       var log = $log.log; // quick log function
+
+      // reassign to remove lint error
+      $ = window.jQuery;
+
 
       // sort obj function from
       var sortObj = function(obj) {

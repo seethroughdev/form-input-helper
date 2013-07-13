@@ -5,6 +5,7 @@ angular.module('formInputHelperApp')
   return {
     restrict: 'A',
     link: function postLink(scope, element, attrs) {
+      attrs = attrs;
       element.bind('click', function() {
         element
           .addClass('active');
