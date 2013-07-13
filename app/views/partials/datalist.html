@@ -1,4 +1,4 @@
-<datalist id='list-choices'>
+<datalist id='list-choices' class="is-hidden">
     {{states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware',
 'District of Columbia', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa',
 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
@@ -7,5 +7,5 @@
 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
 'West Virginia', 'Wisconsin', 'Wyoming'] }}
 
-    <option ng-repeat="state in states" label='{{state}}' value='{{state}}' />
+    <option ng-repeat="state in states" label='{{state}}' value='{{state}}'>
 </datalist>
