@@ -1,15 +1,9 @@
 .btn {
-  background: $blue;
-  @include transition(background 500ms linear);
+  background: $primary-color;
+  @include transition(background 200ms linear);
   border: 0;
   font-size: 1em;
   &:hover {
-    background: darken($blue, 10%)
-  }
-}
-
-.tab-module {
-  &:nth-child(1) {
-    background: $orange
+    background: darken($primary-color, 10%)
   }
 }

@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, .h1 {
-  color: $pink;
+  color: $alt-color;
   text-align: center;
   font-size: 2em;
   background: #f3f3f3;
@@ -15,7 +15,7 @@ h1, .h1 {
 }
 
 h2 {
-  color: $blue;
+  color: $primary-color;
 }
 
 pre code {
@@ -28,5 +28,5 @@ hr {
 
 span[class^="icon"] {
   font-size: .7em;
-  color: darken($grey, 20%);
+  color: $dk-grey;
 }

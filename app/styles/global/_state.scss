@@ -10,19 +10,11 @@
   float: right;
 }
 
-.is-blue {
-  color: $blue;
-}
-
-.is-orange {
-  color: $orange;
-}
-
-.is-black {
-  color: $black;
-}
-
 .btn, a.btn {
 	background: $orange;
 	color: white;
+}
+
+span.is-primary {
+  color: $primary-color;
 }

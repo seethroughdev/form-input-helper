@@ -69,16 +69,38 @@ pre {
   opacity: 0;
 }
 
+.header-nav {
+  margin-bottom: 1em;
+  h3 {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
 .link-divider {
   margin: 0 .5em;
+  color: $dk-grey;
+}
+
+.navigation {
+  line-height: 1.5em;
+  a {
+    &:hover {
+      color: $alt-color;
+      text-decoration: none;
+      span {
+        color: $alt-color;
+      }
+    }
+  }
 }
 
 .tab-module {
   .btn {
-    background: $pink;
+    background: $alt-color;
     color: white;
     &:hover {
-      background: darken($pink, 5%);
+      background: darken($alt-color, 5%);
     }
   }
 }
