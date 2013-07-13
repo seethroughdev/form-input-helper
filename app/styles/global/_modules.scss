@@ -97,8 +97,11 @@ pre {
 
 .tab-module {
   .btn {
-    background: $alt-color;
+    background: $dk-grey;
     color: white;
+    &.is-active {
+      background: darken($dk-grey, 25%);
+    }
     &:hover {
       background: darken($alt-color, 5%);
     }

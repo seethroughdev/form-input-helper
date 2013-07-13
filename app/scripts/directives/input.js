@@ -16,14 +16,19 @@ angular.module('formInputHelperApp')
 
       // sort obj function from
       var sortObj = function(obj) {
-        var key, tempArry = [],
+        var key, tempArray = [],
           i, tempObj = {};
         for (key in obj) {
-          tempArry.push(key);
+          tempArray.push(key);
         }
-        tempArry.sort();
-        for (i = 0; i < tempArry.length; i++) {
-          tempObj[tempArry[i]] = obj[tempArry[i]];
+        tempArray.sort();
+
+        // put placeholder at front
+        tempArray.splice(tempArray.indexOf('placeholder'), 1);
+        tempArray.unshift('placeholder');
+
+        for (i = 0; i < tempArray.length; i++) {
+          tempObj[tempArray[i]] = obj[tempArray[i]];
         }
         return tempObj;
       };
@@ -47,7 +52,7 @@ angular.module('formInputHelperApp')
 
           scope.$on('cattt', function() {
             // added a dummy $on watch for later.
-          })
+          });
 
           // set field type
           element

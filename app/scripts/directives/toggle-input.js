@@ -10,10 +10,13 @@ angular.module('formInputHelperApp')
       key: '@'
     },
     link: function postLink(scope, element) {
+
+      // get input field behind checkbox
       var inputField = element.prev();
 
       element.addClass(scope.key + '-checker');
 
+      // bind behavior of checkbox to input fields
       element.bind('change', function() {
         if (element.prop('checked')) {
           element.attr('checked', 'checked');
@@ -32,6 +35,15 @@ angular.module('formInputHelperApp')
             .attr('disabled', 'disabled');
         }
       });
+
+      // This forces data onLoad, but not on changeInput()
+      // if (element.hasClass('placeholder-checker')) {
+      //   element.attr('checked', 'checked');
+      //   inputField
+      //       .removeAttr('disabled')
+      //       .focus()
+      //       .val(scope.value);
+      // };
 
     }
   };
