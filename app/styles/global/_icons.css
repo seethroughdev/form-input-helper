@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot');
+	src:url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/icomoon.woff') format('woff'),
+		url('/fonts/icomoon.ttf') format('truetype'),
+		url('/fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-reply, .icon-phone, .icon-envelope, .icon-type, .icon-calendar, .icon-search, .icon-droplet, .icon-hash, .icon-checkbox-checked, .icon-radio-checked, .icon-image, .icon-button, .icon-enter, .icon-key, .icon-file, .icon-twitter, .icon-github, .icon-arrow-right, .icon-arrow-left {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-reply:before {
+	content: "\61";
+}
+.icon-phone:before {
+	content: "\62";
+}
+.icon-envelope:before {
+	content: "\63";
+}
+.icon-type:before {
+	content: "\64";
+}
+.icon-calendar:before {
+	content: "\65";
+}
+.icon-search:before {
+	content: "\66";
+}
+.icon-droplet:before {
+	content: "\67";
+}
+.icon-hash:before {
+	content: "\68";
+}
+.icon-checkbox-checked:before {
+	content: "\69";
+}
+.icon-radio-checked:before {
+	content: "\6a";
+}
+.icon-image:before {
+	content: "\6b";
+}
+.icon-button:before {
+	content: "\6c";
+}
+.icon-enter:before {
+	content: "\6d";
+}
+.icon-key:before {
+	content: "\6e";
+}
+.icon-file:before {
+	content: "\6f";
+}
+.icon-twitter:before {
+	content: "\70";
+}
+.icon-github:before {
+	content: "\71";
+}
+.icon-arrow-right:before {
+	content: "\72";
+}
+.icon-arrow-left:before {
+	content: "\73";
+}
