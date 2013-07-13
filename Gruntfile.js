@@ -227,7 +227,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>',
-          src: ['*.html', 'views/*.html'],
+          src: ['*.html', 'views/*.html', 'views/partials/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -245,7 +245,8 @@ module.exports = function (grunt) {
             '.htaccess',
             'bower_components/**/*',
             'images/{,*/}*.{gif,webp,svg}',
-            'styles/fonts/*'
+            'styles/fonts/*',
+            'data/inputs.json'
           ]
         }, {
           expand: true,
@@ -342,7 +343,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'jshint',
-    'test',
+    // 'test',
     'build'
   ]);
 };

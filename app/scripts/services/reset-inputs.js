@@ -4,7 +4,7 @@ angular.module('formInputHelperApp')
   .factory('resetInputs', function () {
 
     // reassign to remove lint error
-    $ = window.jQuery;
+    var $ = window.jQuery;
 
 
     var reset = {
