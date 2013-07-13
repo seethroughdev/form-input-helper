@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('formInputHelperApp')
-  .controller('InputsCtrl', function($scope, inputService, $routeParams, $log, $location, $route, resetInputs, $) {
+  .controller('InputsCtrl', function($scope, inputService, $routeParams, $log, $location, $route, resetInputs) {
 
   // reassign to remove lint error
   $ = window.jQuery;
