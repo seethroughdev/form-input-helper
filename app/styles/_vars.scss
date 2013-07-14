@@ -4,12 +4,18 @@ $blue: hsla(205.20, 85.23%, 65.49%, 1.00);
 $grey: hsla(0.00, 0.00%, 98.33%, 1.00);
 $dk-grey: darken($grey, 20%);
 $orange: rgb(245, 166, 65);
-$green: hsla(108.00, 76.72%, 62.94%, 1.00);
+$green: hsla(108.00, 76.72%, 62.94%, .70);
+$green2: hsla(108.00, 76.72%, 62.94%, .80);
+$green3: hsla(108.00, 76.72%, 62.94%, .60);
 $pink: hsla(357.67, 84.31%, 70.00%, 1.00);
+$brown: hsla(358.70, 51.11%, 18.65%, .80);
+
 
 
 $primary-color: $blue;
 $alt-color: $pink;
+$code-text: hsla(37.76, 56.31%, 74.61%, 1.00);
+
 
 // fonts
 $sans-font: 'Source Sans Pro', sans-serif;
