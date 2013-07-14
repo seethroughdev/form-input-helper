@@ -1,0 +1,50 @@
+@mixin leaves() {
+  content: '';
+  width: 0px;
+  position: absolute;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 2em 3em 2em;
+  border-color: transparent transparent $green transparent;
+  -webkit-transform:rotate(360deg);
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  font-size: 30%;
+}
+
+.tree {
+  width: 15%;
+  height: 80%;
+  background: $brown;
+  position: absolute;
+  bottom: 0%;
+  &:before {
+    @include leaves();
+    bottom: 35%;
+    left: -1.2em;
+  }
+  &:after {
+    @include leaves();
+    bottom: 70%;
+    left: -1.2em;
+  }
+}
+
+.tree1 {
+  left: 10%;
+  opacity: 25% !important;
+}
+
+.tree2 {
+  left: 43%;
+  opacity: 55% !important;
+}
+
+.tree3 {
+  left: 75%;
+  opacity: 35% !important;
+}
