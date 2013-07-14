@@ -16,4 +16,9 @@ body {
   padding: 0 0 0 1.5em;
   border-left: 1px solid darken($grey, 5%);
   box-shadow: -2px 1px 1px 0px #fcfcfc;
+  @media screen and(max-width: 40em) {
+    padding: 0 0 0 1.515151515152%;
+    border-left: 0;
+    box-shadow: none;
+  }
 }

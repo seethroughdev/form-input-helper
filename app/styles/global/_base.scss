@@ -6,21 +6,25 @@ body {
 }
 
 label {
-    display: block;
+  display: block;
 }
 
 pre {
-    border: 0;
+  background: #333;
+  color: $code-text;
+  border: 1px solid darken($grey, 10%);
+  padding: 1em;
+  word-break: break-word;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /**
@@ -28,5 +32,5 @@ pre {
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {
-    *zoom: 1;
+  *zoom: 1;
 }
