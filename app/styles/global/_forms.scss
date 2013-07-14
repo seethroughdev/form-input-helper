@@ -29,3 +29,7 @@ input[readonly], input:disabled {
         box-shadow: none;
     }
 }
+
+#display-form input {
+    border: 2px solid $dk-grey;
+}
