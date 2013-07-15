@@ -31,7 +31,7 @@ angular.module('formInputHelperApp')
 
       inputType = inputType || $routeParams.inputType;
       $scope.input = findInput(inputType, offset);
-      // $location.path('/inputs/' + inputType);
+      $location.path('/inputs/' + inputType);
 
       // setting prev/next buttons
       $scope.prevInputType = findInput(inputType, -1);
