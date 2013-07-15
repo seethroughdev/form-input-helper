@@ -30,6 +30,10 @@ input[readonly], input:disabled {
     }
 }
 
+input[type="color"] {
+    height: 40px;
+}
+
 // #display-form input {
 //     border: 2px solid $dk-grey;
 // }
