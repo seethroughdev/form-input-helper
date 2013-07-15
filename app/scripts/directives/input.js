@@ -61,8 +61,7 @@ angular.module('formInputHelperApp')
           // set field type
           element
             .attr('type', obj.type)
-            .attr('name', obj.type + '_id')
-            .addClass('grid-5');
+            .attr('name', obj.type + '_id');
 
           // set valAttr to value
           for (key in valAttr) {
