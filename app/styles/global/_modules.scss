@@ -103,3 +103,18 @@
     display: none;
   }
 }
+
+// setting this value because I can't attach a class because its pulled into pre
+#display-form {
+  input:nth-child(1) {
+    width: 80.30303030303%;
+    float:left;
+    margin: 0 1.515151515152%;
+
+  }
+  input[type=submit] {
+    margin-left: 1.51515151515%;
+    position: relative;
+    top: -1px;
+  }
+}
